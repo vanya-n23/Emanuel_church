@@ -1,0 +1,24 @@
+{
+  "name": "emanuel-church",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "accordion": "^3.0.2",
+    "accordion-js": "^3.4.1",
+    "glob": "^11.0.2",
+    "izitoast": "^1.4.0",
+    "postcss": "^8.5.4",
+    "postcss-sort-media-queries": "^5.2.0",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
+  }
+}
