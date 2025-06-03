@@ -1,0 +1,24 @@
+.section-hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 250px 0;
+    background-image: linear-gradient(to bottom,
+                rgba(255, 255, 255, 0.7),
+                rgba(51, 51, 58, 0.7)),
+            url(../images/BG-1.jpeg);
+}
+
+.section-hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 75px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}

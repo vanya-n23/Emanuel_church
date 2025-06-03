@@ -1,0 +1,33 @@
+.header .container {
+    background-color: #7D0220;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    height: 100px;
+}
+
+
+
+.logo {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.nav-list {
+    display: flex;
+    gap:50px;
+}
+
+.nav-link {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+.nav-link {
+    color:#FFFFFF;
+}
+
