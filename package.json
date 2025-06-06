@@ -9,12 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.3.5"
+    "glob": "^11.0.2",
+    "vite": "^6.3.5",
+    "vite-plugin-handlebars": "^2.0.0"
   },
   "dependencies": {
     "accordion": "^3.0.2",
     "accordion-js": "^3.4.1",
-    "glob": "^11.0.2",
     "izitoast": "^1.4.0",
     "postcss": "^8.5.4",
     "postcss-sort-media-queries": "^5.2.0",

@@ -1,10 +1,23 @@
+@import url("./common.css");
+@import url("./fonts.css");
 
-@import url('./common.css');
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./aboutUs.css");
+@import url("./contacts.css");
+@import url("./donation.css");
+@import url("./news.css");
+@import url("./footer.css");
 
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./aboutUs.css');
-@import url('./contacts.css');
-@import url('./donation.css');
-@import url('./news.css');
-@import url('./footer.css');
+body {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2 {
+  font-family: "Codec Pro", sans-serif;
+}
+blockquote,
+.quote {
+  font-family: "Buonngiorno", cursive;
+}
