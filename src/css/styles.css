@@ -1,10 +1,10 @@
+@import url("./common.css");
 
-@import url('./common.css');
-
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./aboutUs.css');
-@import url('./contacts.css');
-@import url('./donation.css');
-@import url('./news.css');
-@import url('./footer.css');
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./aboutUs.css");
+@import url("./contacts.css");
+@import url("./donation.css");
+@import url("./news.css");
+@import url("./footer.css");
+@import url("./churchVision.css");
