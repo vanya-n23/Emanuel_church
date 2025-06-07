@@ -1,0 +1,30 @@
+/* Gilroy */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-FREE/Gilroy-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-FREE/Gilroy-ExtraBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Codec Pro */
+@font-face {
+  font-family: "Codec Pro";
+  src: url("../assets/fonts/codec-pro/CodecPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Buonngiorno */
+@font-face {
+  font-family: "Buonngiorno";
+  src: url("../assets/fonts/buongiorno-rastellino-font/Buongiorno_Rastellino-Script.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
