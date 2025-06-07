@@ -1,0 +1,42 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Адмін Панель</title>
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+  <body>
+    <div id="auth-section">
+      <h2>🔐 Введіть пароль для доступу</h2>
+      <input type="password" id="admin-password" placeholder="Пароль" />
+      <button id="login-btn">Увійти</button>
+      <p id="auth-error" class="error-msg"></p>
+    </div>
+
+    <div id="admin-panel" style="display: none">
+      <h1>Адмін Панель</h1>
+      <form id="news-form">
+        <input
+          type="text"
+          id="news-title"
+          placeholder="Заголовок новини"
+          required
+        />
+        <textarea id="news-body" placeholder="Текст новини" required></textarea>
+        <input
+          type="url"
+          id="news-img"
+          placeholder="Посилання на зображення"
+          required
+        />
+        <p id="news-success"></p>
+        <button id="add-news-btn" type="submit">Додати новину</button>
+      </form>
+      <div id="news-preview"></div>
+    </div>
+
+    <script src="/js/admin.js"></script>
+  </body>
+</html>
