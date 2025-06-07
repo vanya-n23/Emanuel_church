@@ -9,11 +9,9 @@
     height: 100px;
 }
 
-
-
 .logo {
-    font-family: "Rubik", sans-serif;
     font-weight: 600;
+    letter-spacing: 0.05em;
     color: #FFFFFF;
     font-size: 35px;
 }
@@ -24,7 +22,7 @@
 }
 
 .nav-link {
-    font-family: "Rubik", sans-serif;
+    letter-spacing: 0.05em;
     font-weight: 400;
     color: #FFFFFF;
     font-size: 25px;

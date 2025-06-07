@@ -23,7 +23,6 @@
 
 .hero-title {
     color: #ffffff;
-    font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 75px;
     letter-spacing: 0.05em;
@@ -31,14 +30,12 @@
 }
 
 .hero-article {
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 30px;
     color: #ffffff;
 }
 
 .hero-btn {
-    font-family: "Lato", sans-serif;
     background: transparent;
     margin: 200px auto;
     color: #ffffff;
