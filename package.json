@@ -19,6 +19,7 @@
     "izitoast": "^1.4.0",
     "postcss": "^8.5.4",
     "postcss-sort-media-queries": "^5.2.0",
+    "swiper": "^11.2.8",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
