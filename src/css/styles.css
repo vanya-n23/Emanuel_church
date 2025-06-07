@@ -1,5 +1,5 @@
-@import url("./common.css");
 @import url("./fonts.css");
+@import url("./common.css");
 
 @import url("./header.css");
 @import url("./hero.css");
@@ -14,8 +14,7 @@ body {
   font-family: "Gilroy", sans-serif;
   font-weight: 400;
 }
-h1,
-h2 {
+h1 {
   font-family: "Codec Pro", sans-serif;
 }
 blockquote,
