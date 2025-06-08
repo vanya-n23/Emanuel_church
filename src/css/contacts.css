@@ -1,0 +1,161 @@
+h2 {
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.contacts-section {
+  background-color: #ffffff;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  background-color: #b9cad1;
+  justify-content: space-between;
+}
+
+.social-block {
+  padding-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.icon-wrapper {
+  width: 42px;
+  height: 42px;
+  background-color: #181001;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.icon-wrapper:hover {
+  background-color: #7d0220;
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  fill: #b9cad1;
+  transition: fill 0.3s, transform 0.2s;
+}
+
+.icon:hover {
+  fill: #b9cad1;
+  transform: scale(1.1);
+}
+
+.map-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  width: 100%;
+}
+
+.map-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.location-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: "Gilroy", sans-serif;
+  color: #1b1011;
+}
+
+.location-text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.location-text strong {
+  font-weight: 600;
+  display: block;
+}
+
+/* Swiper */
+.ministry-slider {
+  position: relative;
+  padding-bottom: 40px;
+  padding: 20px;
+}
+.swiper-wrapper {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: block;
+  text-decoration: none;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 60%);
+  z-index: 1;
+}
+
+.card-overlay {
+  position: absolute;
+  z-index: 2;
+  bottom: 50px;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* font-family: "Gilroy", sans-serif; */
+}
+
+.card-overlay h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7d0220; /* Burgundy */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7d0220;
+}

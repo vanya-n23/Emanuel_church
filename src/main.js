@@ -1,1 +1,2 @@
-// links with each files jsCODE
+import "./js/slider";
+import "./js/newsData";

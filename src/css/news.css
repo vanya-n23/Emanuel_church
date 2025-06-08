@@ -1,0 +1,88 @@
+.news {
+  background-color: #fff;
+  padding: 60px;
+}
+.news-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.news-title {
+  font-style: normal;
+  font-weight: 400;
+}
+.news-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.news-card {
+  width: 200px;
+  border: 1px solid #1b1011;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+.news-card-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: block;
+  object-fit: cover;
+}
+.news-card-text {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+/* ______MODAL_____ */
+.news-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.news-modal.open {
+  display: flex;
+}
+
+.news-modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.news-modal-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.modal-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.modal-text p {
+  font-size: 1rem;
+}
+.close-modal {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
