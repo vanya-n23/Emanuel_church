@@ -6,6 +6,7 @@
 @import url("./aboutUs.css");
 @import url("./contacts.css");
 @import url("./donation.css");
+@import url("./donationText.css");
 @import url("./churchVision.css");
 @import url("./news.css");
 @import url("./footer.css");
@@ -14,9 +15,11 @@ body {
   font-family: "Gilroy", sans-serif;
   font-weight: 400;
 }
+
 h1 {
   font-family: "Codec Pro", sans-serif;
 }
+
 blockquote,
 .quote {
   font-family: "Buonngiorno", cursive;

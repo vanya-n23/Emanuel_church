@@ -4,6 +4,7 @@ h2 {
   line-height: 1.2;
   margin-bottom: 20px;
 }
+
 .contacts-section {
   background-color: #ffffff;
 }
@@ -11,7 +12,7 @@ h2 {
 .contacts-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 60px;
+  padding: 60px 90px;
   background-color: #b9cad1;
   justify-content: space-between;
 }
@@ -98,6 +99,7 @@ h2 {
   padding-bottom: 40px;
   padding: 20px;
 }
+
 .swiper-wrapper {
   background-color: #ffffff;
   padding: 40px;

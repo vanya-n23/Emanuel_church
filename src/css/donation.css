@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: center;
 }
+
 .donation__card {
   max-width: 1000px;
   margin: 0 auto;
@@ -15,6 +16,7 @@
   border-radius: 12px;
   background-color: white;
 }
+
 .donation__title {
   text-align: center;
   font-weight: 700;
@@ -23,11 +25,13 @@
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+
 .donation__text {
   line-height: 1.5;
   text-align: center;
   max-width: 700px;
 }
+
 .donation__details {
   display: flex;
   margin-top: 52px;
@@ -38,8 +42,10 @@
     display: grid;
     gap: 12px;
   }
+
   img {
     width: 100px;
     height: 100px;
   }
+
 }

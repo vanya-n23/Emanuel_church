@@ -6,14 +6,29 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 0 75px;
-    height: 100px;
+    height: 125px;
 }
 
-.logo {
+html {
+    scroll-behavior: smooth; }
+
+.logo-header {
+    text-align: center;
+}
+
+.title-logo-header-top {
+    text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: #FFFFFF;
     font-size: 35px;
+    text-align: center;
+}
+
+.title-logo-header-botoom{
+    font-weight: 100;
+    font-size: 20px;  
+    color: #FFFFFF;
 }
 
 .nav-list {
