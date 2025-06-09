@@ -1,0 +1,45 @@
+.donation__section {
+  display: flex;
+  padding-block: 60px 80px;
+  font-family: "Gilroy";
+  font-size: 20px;
+  background-image: url("../images/donation-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.donation__card {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: white;
+}
+.donation__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.donation__text {
+  line-height: 1.5;
+  text-align: center;
+  max-width: 700px;
+}
+.donation__details {
+  display: flex;
+  margin-top: 52px;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: grid;
+    gap: 12px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
