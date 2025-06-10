@@ -17,6 +17,10 @@ h2 {
   justify-content: space-between;
 }
 
+.contacts {
+  font-style: normal;
+}
+
 .social-block {
   padding-top: 20px;
 }
@@ -160,4 +164,16 @@ h2 {
 
 .swiper-pagination-bullet-active {
   background-color: #7d0220;
+}
+
+/* MOBILE */
+@media screen and (min-width: 320px) and (max-width: 900px) {
+  .contacts-wrapper {
+    justify-content: center;
+    padding: 60px 30px;
+  }
+
+  .social-block {
+    padding-bottom: 20px;
+  }
 }
