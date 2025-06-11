@@ -1,84 +1,55 @@
-document.addEventListener("DOMContentLoaded", () => {
+import Swiper from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+document.addEventListener("DOMContentLoaded", async () => {
   const newsContainer = document.getElementById("news-container");
 
-  // 👉 Fallback-заглушка для новин (показується, якщо localStorage пустий)
-  const fallbackNews = [
-    {
-      id: "demo1",
-      title: "Молодіжна зустріч у суботу",
-      body: "Приєднуйтесь до теплого вечора спілкування, молитви і кави о 18:00",
-      image: "../assets/contacts/youth-events.jpg",
-      date: "07.06.2025",
-    },
-    {
-      id: "demo2",
-      title: "Служіння прославлення відкрито для нових учасників",
-      body: "Якщо ви співаєте або граєте на інструментах — запрошуємо до команди!",
-      image: "../assets/contacts/small-group.jpg",
-      date: "05.06.2025",
-    },
-    {
-      id: "demo2",
-      title: "Служіння прославлення відкрито для нових учасників",
-      body: "Якщо ви співаєте або граєте на інструментах — запрошуємо до команди!",
-      image: "../assets/contacts/sunday-service.jpg",
-      date: "05.06.2025",
-    },
-    {
-      id: "demo2",
-      title: "Служіння прославлення відкрито для нових учасників",
-      body: "Якщо ви співаєте або граєте на інструментах — запрошуємо до команди!",
-      image: "../assets/contacts/youth-events.jpg",
-      date: "05.06.2025",
-    },
-  ];
+  try {
+    const response = await fetch("/data/news.json");
+    const newsData = await response.json();
 
-  // 🔄 Завантажуємо з localStorage або використовуємо порожній масив
-  const savedNews = JSON.parse(localStorage.getItem("churchNews")) || [];
-
-  // 🔁 Комбінуємо saved + fallback (тільки якщо savedNews пустий)
-  const combinedNews = [...savedNews, ...fallbackNews];
-
-  // ❌ Якщо все одно порожньо (на всяк випадок)
-  if (!combinedNews.length) {
-    newsContainer.innerHTML = "<p>Новин поки немає.</p>";
-    return;
-  }
-
-  // 🧱 Генерація карток новин
-  combinedNews.forEach((item) => {
-    const card = document.createElement("div");
-    card.className = "news-card";
-    card.dataset.id = item.id;
-    card.innerHTML = `
-      <img class="news-card-img" src="${item.image}" alt="${item.title}" />
-      <p class="news-card-text">${item.title}</p>
-    `;
-    card.addEventListener("click", () => openModal(item));
-    newsContainer.appendChild(card);
-  });
-
-  // 📦 Модалка
-  const modal = document.getElementById("newsModal");
-  const modalImg = document.getElementById("modalImage");
-  const modalTitle = document.getElementById("modalTitle");
-  const modalBody = document.getElementById("modalBody");
-  const modalDate = document.getElementById("modalDate");
-  const closeBtn = document.querySelector(".close-modal");
-
-  function openModal(data) {
-    modalImg.src = data.image;
-    modalTitle.textContent = data.title;
-    modalBody.textContent = data.body;
-    modalDate.textContent = `Дата: ${data.date}`;
-    modal.classList.add("open");
-  }
-
-  closeBtn.addEventListener("click", () => modal.classList.remove("open"));
-
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.remove("open");
+    if (!newsData.length) {
+      newsContainer.innerHTML = "<p>Новин поки немає.</p>";
+      return;
     }
-  });
+
+    newsData.forEach((item) => {
+      const slide = document.createElement("div");
+      slide.className = "swiper-slide";
+
+      const wrapper = document.createElement("div");
+      wrapper.className = "instagram-wrapper";
+
+      const blockquote = document.createElement("blockquote");
+      blockquote.className = "instagram-media";
+      blockquote.setAttribute("data-instgrm-permalink", item.url);
+      blockquote.setAttribute("data-instgrm-version", "14");
+      blockquote.style.margin = "auto";
+
+      wrapper.appendChild(blockquote);
+      slide.appendChild(wrapper);
+      newsContainer.appendChild(slide);
+    });
+
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
+
+    new Swiper(".news-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+  } catch (error) {
+    console.error("Помилка при завантаженні новин:", error);
+  }
 });
