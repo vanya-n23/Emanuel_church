@@ -68,3 +68,29 @@
   fill: #1b1011;
   /* transform: scale(1.1); */
 }
+
+@media screen and (max-width: 768px) and (min-width: 440px) {
+  .footer-section {
+    padding: 40px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .logo-block {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 439px) and (min-width: 318px) {
+  .footer-section {
+    padding: 20px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .logo-block {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+}
