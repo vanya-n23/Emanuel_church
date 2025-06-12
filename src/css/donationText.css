@@ -1,18 +1,58 @@
 .donationText__section {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     background-color: #b9cad1;
-    padding: 70px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 .text__container {
-    padding: 0 250px;
+    padding: 0;
+    max-width: 100%;
 }
 
 .donation__article__f {
-    font-size: 25px;
-    text-align: center;
+    font-size: 18px;
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
+.donation__article__s {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+
+    .donationText__section {
+        padding: 60px 40px;
+    }
+
+    .text__container {
+        padding: 0 80px;
+    }
+
+    .donation__article__f {
+        font-size: 22px;
+    }
+
+    .donation__article__s {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .donationText__section {
+        padding: 70px 60px;
+    }
+
+    .donation__article__f {
+        font-size: 25px;
+    }
+
+    .donation__article__s {
+        font-size: 28px;
+    } 
+}

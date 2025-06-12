@@ -1,57 +1,100 @@
-.header .container {
+.header {
     background-color: #7D0220;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 75px;
-    height: 125px;
 }
 
-html {
-    scroll-behavior: smooth; }
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
 
 .logo-header {
     text-align: center;
 }
 
 .title-logo-header-top {
-    text-transform: uppercase;
+    font-size: 15px;
     font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-    font-size: 35px;
-    text-align: center;
 }
 
-.title-logo-header-botoom{
-    font-weight: 100;
-    font-size: 20px;  
+.title-logo-header-botoom {
+    font-size: 10px;
+    font-weight: 300;
     color: #FFFFFF;
 }
 
 .nav-list {
     display: flex;
-    gap:50px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 0;
 }
 
 .nav-link {
-    letter-spacing: 0.05em;
+    font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
-    font-size: 25px;
+    letter-spacing: 0.05em;
+    transition: color 300ms ease;
 }
 
-.nav-link:hover {
-    color: wheat;
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+.nav-link:hover,
 .nav-link:focus {
     color: wheat;
 }
 
 
+/* адапитивний дизайн (медіа запити) */
 
+@media (min-width: 768px) {
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 32px;
+    }
 
+    .nav-list {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .title-logo-header-top {
+        font-size: 25px;
+    }
+
+    .title-logo-header-botoom {
+        font-size: 13px;  
+    }
+
+    .nav-link {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header .container {
+        height: 125px;
+    }
+
+    .nav-list {
+        gap: 50px;
+    }
+
+    .title-logo-header-top {
+        font-size: 35px; 
+    }
+
+    .title-logo-header-botoom {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 25px;
+    } 
+}

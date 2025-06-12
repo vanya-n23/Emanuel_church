@@ -1,50 +1,108 @@
-.section-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 300px;
-}
-
 .section-hero {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    background-position: center;
     background-image: linear-gradient(to bottom,
-                rgba(202, 175, 175, 0.7),
-                rgba(51, 51, 58, 0.7)),
-            url(../images/BG-1.jpeg);
+            rgba(202, 175, 175, 0.7),
+            rgba(51, 51, 58, 0.7)),
+        url(../images/BG-1.jpeg);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .section-hero-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 16px;
 }
 
 .hero-title {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 75px;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
-    text-align: center;
+    color: #FFFFFF;
 }
 
 .hero-article {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 18px;
     color: #ffffff;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-btn {
     background: transparent;
-    margin: 200px auto;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 18px;
+    margin-top: 80px;
 }
 
-
 .hero-btn:hover {
-    font-size: 27px;
+    font-size: 20px;
     transition: font-size 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* адапитивний дизайн (медіа запити) */
+
+@media (min-width: 768px) {
+    .section-hero {
+        height: 700px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-article {
+        font-size: 22px;
+    }
+
+    .hero-btn {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    .hero-btn:hover {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-hero {
+        height: 800px;
+    }
+
+    .section-container {
+        padding: 80px 100px;
+    }
+
+    .hero-title {
+        font-size: 75px;
+    }
+
+    .hero-article {
+        font-size: 30px;
+    }
+
+    .hero-btn {
+        font-size: 25px;
+        margin-top: 200px;
+    }
+
+    .hero-btn:hover {
+        font-size: 27px;
+    } 
+}

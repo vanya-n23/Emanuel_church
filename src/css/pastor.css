@@ -1,48 +1,44 @@
 .pastor-container {
-    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    padding: 70px 0;
-    gap: 200px;
-    max-width: 1280px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+    text-align: center;
+}
+
+.pastor-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .pastor-text {
     display: flex;
     flex-direction: column;
-}
-
-.pastor-photo {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
+    gap: 16px;
 }
 
 .title-pastor-name {
-    font-size: 35px;
+    font-size: 26px;
     font-weight: 600;
 }
 
 .article-pastor-dscr-1 {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .article-pastor-dscr-2 {
-    margin-top: 25px;
-    font-size: 18px;
-    line-height: 1;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-top: 16px;
 }
 
-/* tabletka */
-
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
     .pastor-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 50px;
-        text-align: center;
-        gap: 30px;
+        padding: 60px 40px;
+        gap: 40px;
     }
 
     .pastor-photo {
@@ -53,29 +49,42 @@
     .title-pastor-name {
         font-size: 30px;
     }
-}
-
-/* mobile */
-
-@media (max-width: 768px) {
-    .pastor-container {
-        padding: 30px 20px;
-    }
-
-    .pastor-photo {
-        width: 250px;
-        height: 250px;
-    }
-
-    .title-pastor-name {
-        font-size: 26px;
-    }
 
     .article-pastor-dscr-1 {
         font-size: 20px;
     }
 
     .article-pastor-dscr-2 {
-        font-size: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pastor-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 80px 100px;
+        gap: 120px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .pastor-photo {
+        width: 350px;
+        height: 350px;
+    }
+
+    .title-pastor-name {
+        font-size: 35px;
+    }
+
+    .article-pastor-dscr-1 {
+        font-size: 22px;
+    }
+
+    .article-pastor-dscr-2 {
+        font-size: 18px;
     } 
 }
