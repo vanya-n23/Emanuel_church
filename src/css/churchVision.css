@@ -1,30 +1,64 @@
 .churchVision__section {
-  font-size: 24px;
-  padding: 80px 100px;
+  padding: 30px 20px;
+  font-size: 20px;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 640px;
 }
 
 .churchVision__title {
   text-align: center;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .churchVision__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2em;
-  column-gap: 2.5em;
+  row-gap: 1.5em;
 }
 
 .churchVision__list-item {
   border: 1px solid black;
   border-radius: 12px;
-  padding: 28px 40px;
+  padding: 16px 28px;
 
   h3 {
     font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .churchVision__section {
+    max-width: 900px;
+    padding: 40px 50px;
+    font-size: 22px;
+  }
+  .churchVision__list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5em;
+  }
+  .churchVision__title {
+    margin-bottom: 45px;
+  }
+  .churchVision__list-item {
+    padding: 20px 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .churchVision__section {
+    padding: 80px 100px;
+    max-width: 1280px;
+    font-size: 24px;
+  }
+
+  .churchVision__list {
+    row-gap: 2em;
+    column-gap: 2.5em;
+  }
+  .churchVision__title {
+    margin-bottom: 60px;
+  }
+  .churchVision__list-item {
+    padding: 28px 40px;
   }
 }

@@ -2,7 +2,8 @@
   display: flex;
   padding-block: 60px 80px;
   font-family: "Gilroy";
-  font-size: 20px;
+  font-size: 18px;
+
   background-image: url("../images/donation-bg.png");
   background-size: cover;
   background-position: center;
@@ -11,7 +12,7 @@
 .donation__card {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 24px;
   border: 1px solid black;
   border-radius: 12px;
   background-color: white;
@@ -20,23 +21,26 @@
 .donation__title {
   text-align: center;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   font-style: italic;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .donation__text {
   line-height: 1.5;
   text-align: center;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .donation__details {
   display: flex;
-  margin-top: 52px;
+  margin-top: 30px;
+  flex-direction: column;
+  gap: 30px;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 
   ul {
     display: grid;
@@ -44,8 +48,40 @@
   }
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
+}
 
+@media screen and (min-width: 600px) {
+  .donation__card {
+    padding: 32px;
+  }
+  .donation__title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .donation__details {
+    gap: 10px;
+    margin-top: 52px;
+    text-align: start;
+    flex-direction: row;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .donation__section {
+    font-size: 20px;
+  }
+  .donation__card {
+    padding: 40px;
+  }
+  .donation__text {
+    max-width: 700px;
+  }
 }

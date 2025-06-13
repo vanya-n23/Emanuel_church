@@ -1,31 +1,29 @@
 .aboutUs__section {
   font-size: 18px;
-  padding-block: 180px 160px;
+  padding-block: 100px 80px;
   position: relative;
   background-color: #fefaee;
-  position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding-bottom: 0;
 }
+
 .aboutUs__container {
-  padding-inline: 90px;
+  padding-inline: 30px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
 }
-.aboutUs__section::after {
-  content: "About us";
-  position: absolute;
-  font-family: "Buonngiorno";
-  font-style: italic;
-  font-size: 90px;
-  font-weight: 400;
-  top: 15%;
-  right: 380px;
-}
+
 .aboutUs__section::before {
   content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 640px;
-  width: 500px;
+  position: relative;
+  display: block;
+  margin: 40px 0 0 auto;
+  width: min(400px, 90%);
+  height: 60vh;
   background-image: url(/images/aboutUs-bg.png);
   background-size: cover;
   background-position: center;
@@ -34,11 +32,25 @@
   opacity: 0.8;
 }
 
+.aboutUs__section::after {
+  content: "About us";
+  position: absolute;
+  font-family: "Buonngiorno";
+  font-style: italic;
+  font-size: 60px;
+  font-weight: 400;
+  top: 60%;
+  left: calc(70% - 260px);
+  width: 100%;
+}
+
 .aboutUs__title {
   font-family: "Codec Pro";
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
+  font-size: clamp(24px, 5vw, 40px);
+  max-width: 400px;
 }
 
 .aboutUs__text-list {
@@ -47,50 +59,61 @@
   max-width: 400px;
 }
 
-@media (max-width: 1280px) {
-  .aboutUs__title {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
+/* Tablet */
+@media (min-width: 900px) {
   .aboutUs__section {
+    display: block;
+    flex-direction: unset;
+    justify-content: unset;
     padding-block: 100px 80px;
-  }
-  .aboutUs__section::before {
-    width: 350px;
-    height: 450px; /* Adjust height for smaller screens */
-  }
-  .aboutUs__section::after {
-    display: none;
-  }
-}
-
-@media (max-width: 900px) {
-  .aboutUs__section {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    padding-bottom: 0;
-  }
-  .aboutUs__section::before {
-    display: block;
-    width: min(400px, 90%);
-    height: 60vh; /* Adjust height for smaller screens */
-    position: relative;
-    margin: 40px 0 0 auto;
-  }
-
-  .aboutUs__section::after {
-    display: block;
-    width: 100%;
-    font-size: 60px;
-    left: calc(70% - 260px);
-    top: 60%;
   }
 
   .aboutUs__container {
-    text-align: center;
-    display: grid;
-    padding-inline: 30px; /* Tighter padding on smaller screens */
-    justify-content: center;
+    padding-inline: 90px;
+    text-align: unset;
+    justify-content: unset;
+  }
+
+  .aboutUs__section::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 350px;
+    height: 450px;
+  }
+
+  .aboutUs__section::after {
+    display: none;
+  }
+
+  .aboutUs__title {
+    margin-bottom: 20px;
+    max-width: 360px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .aboutUs__section {
+    padding-block: 180px 160px;
+  }
+
+  .aboutUs__section::before {
+    width: 500px;
+    height: 640px;
+  }
+
+  .aboutUs__section::after {
+    display: block;
+    font-size: 90px;
+    top: 15%;
+    right: 380px;
+    left: unset;
+    width: unset;
+  }
+
+  .aboutUs__title {
+    margin-bottom: 40px;
   }
 }
