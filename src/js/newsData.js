@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const newsContainer = document.getElementById("news-container");
 
   try {
-    const response = await fetch("/data/news.json");
+    const response = await fetch("/public/data/news.json");
     const newsData = await response.json();
 
     if (!newsData.length) {
