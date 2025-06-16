@@ -35,7 +35,7 @@
 .aboutUs__section::after {
   content: "About us";
   position: absolute;
-  font-family: "Buonngiorno";
+  font-family: "Buongiorno";
   font-style: italic;
   font-size: 60px;
   font-weight: 400;
