@@ -27,11 +27,12 @@
 }
 
 .hero-title {
-    font-size: 28px;
+    padding-right: 10px;
+    font-size: 43px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
+    letter-spacing: .05em;
+    color: #fff;
 }
 
 .hero-article {
