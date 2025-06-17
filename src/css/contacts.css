@@ -1,8 +1,12 @@
 h2 {
   font-style: italic;
-  font-size: 36px;
+  font-size: 46px;
   line-height: 1.2;
   margin-bottom: 20px;
+}
+
+.article-contact-links {
+  font-size: 22px;
 }
 
 .contacts-section {
@@ -21,6 +25,10 @@ h2 {
   font-style: normal;
 }
 
+.contacts-item {
+  font-size: 24px;
+}
+
 .social-block {
   padding-top: 20px;
 }
@@ -32,8 +40,8 @@ h2 {
 }
 
 .icon-wrapper {
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   background-color: #181001;
   border-radius: 50%;
   display: flex;
@@ -65,9 +73,9 @@ h2 {
   justify-content: space-around;
   background-color: #ffffff;
   border-radius: 12px;
-  padding: 30px 40px;
+  padding: 60px 70px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
 }
 

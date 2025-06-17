@@ -59,7 +59,7 @@
 
 .burger-icon {
   display: block;
-  fill: #2f2f37;
+  fill: #fff;
 }
 
 .mobile-menu {
@@ -125,6 +125,8 @@
 .mobile-logo-header {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 100px;
 }
 .mobile-logo-top {
@@ -159,10 +161,7 @@
   align-items: center;
   padding: 0;
 }
-.menu-nav-item {
-}
-.current {
-}
+
 .menu-nav-link {
   font-size: 28px;
   font-weight: 400;
@@ -212,6 +211,8 @@
 
 @media (min-width: 1024px) {
   .header .container {
+    padding-right: 50px;
+    padding-left: 50px;
     height: 125px;
   }
 

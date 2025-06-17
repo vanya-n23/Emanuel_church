@@ -37,10 +37,10 @@
   position: absolute;
   font-family: "Buongiorno";
   font-style: italic;
-  font-size: 60px;
+  font-size: 150px;
   font-weight: 400;
-  top: 60%;
-  left: calc(70% - 260px);
+  top: 40%;
+  left: calc(70% - 290px);
   width: 100%;
 }
 
@@ -106,7 +106,7 @@
 
   .aboutUs__section::after {
     display: block;
-    font-size: 90px;
+    font-size: 200px;
     top: 15%;
     right: 380px;
     left: unset;
