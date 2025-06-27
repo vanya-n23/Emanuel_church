@@ -1,18 +1,47 @@
 [
   {
     "id": "1",
-    "url": "https://www.instagram.com/reel/DKtiYvPs5ok/"
+    "instagramUrl": "https://www.instagram.com/reel/DKtiYvPs5ok/",
+    "title": "Недільне богослужіння 22 грудня",
+    "description": "Запрошуємо всіх на недільне богослужіння. Тема проповіді: 'Готуємося до Різдва Христового'",
+    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/470894504_18471633936019063_6923745069264264950_n.jpg",
+    "date": "2024-12-22",
+    "type": "service"
   },
   {
     "id": "2",
-    "url": "https://www.instagram.com/reel/DKeB3JhMgmC/"
+    "instagramUrl": "https://www.instagram.com/reel/DKeB3JhMgmC/",
+    "title": "Різдвяна програма для дітей",
+    "description": "Дитяча різдвяна програма з піснями, іграми та подарунками від Святого Миколая",
+    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/470556932_18471211529019063_8014693043447876645_n.jpg",
+    "date": "2024-12-20",
+    "type": "event"
   },
   {
     "id": "3",
-    "url": "https://www.instagram.com/reel/DIyP1QNMdlc/"
+    "instagramUrl": "https://www.instagram.com/reel/DIyP1QNMdlc/",
+    "title": "Молитовний вечір",
+    "description": "Щотижневий молитовний вечір у четвер о 19:00. Приходьте молитися разом",
+    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/469404728_18470406493019063_1157772772699854866_n.jpg",
+    "date": "2024-12-19",
+    "type": "prayer"
   },
   {
     "id": "4",
-    "url": "https://www.instagram.com/p/DIbaIvAM1qx/"
+    "instagramUrl": "https://www.instagram.com/p/DIbaIvAM1qx/",
+    "title": "Різдвяні колядки",
+    "description": "Вивчаємо традиційні українські колядки до Різдва. Приєднуйтесь до нашого хору",
+    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/468748252_18469759854019063_4782926540356816520_n.jpg",
+    "date": "2024-12-18",
+    "type": "community"
+  },
+  {
+    "id": "5",
+    "instagramUrl": "https://www.instagram.com/p/DIbaIvAM1qx/",
+    "title": "Різдвяні колядки",
+    "description": "Вивчаємо традиційні українські колядки до Різдва. Приєднуйтесь до нашого хору",
+    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/468748252_18469759854019063_4782926540356816520_n.jpg",
+    "date": "2024-12-18",
+    "type": "community"
   }
 ]
