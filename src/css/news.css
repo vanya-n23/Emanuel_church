@@ -18,10 +18,11 @@
 .news-container {
   position: relative;
   width: 100%;
+  padding: 0 50px;
 }
 
 .news-swiper {
-  overflow: visible;
+  overflow: hidden;
 }
 
 .news .swiper-wrapper {
@@ -276,6 +277,10 @@
     padding: 0 15px;
   }
 
+  .news-container {
+    padding: 0 40px;
+  }
+
   .news-title {
     font-size: 2em;
     margin-bottom: 40px;
@@ -302,6 +307,10 @@
 }
 
 @media (max-width: 480px) {
+  .news-container {
+    padding: 0 30px;
+  }
+
   .news-image {
     height: 180px;
   }
