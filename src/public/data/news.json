@@ -4,7 +4,7 @@
     "instagramUrl": "https://www.instagram.com/reel/DKtiYvPs5ok/",
     "title": "Недільне богослужіння 22 грудня",
     "description": "Запрошуємо всіх на недільне богослужіння. Тема проповіді: 'Готуємося до Різдва Христового'",
-    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/470894504_18471633936019063_6923745069264264950_n.jpg",
+    "image": "../../assets/contacts/sunday-service.jpg",
     "date": "2024-12-22",
     "type": "service"
   },
@@ -13,7 +13,7 @@
     "instagramUrl": "https://www.instagram.com/reel/DKeB3JhMgmC/",
     "title": "Різдвяна програма для дітей",
     "description": "Дитяча різдвяна програма з піснями, іграми та подарунками від Святого Миколая",
-    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/470556932_18471211529019063_8014693043447876645_n.jpg",
+    "image": "../../assets/contacts/music-ministry.jpg",
     "date": "2024-12-20",
     "type": "event"
   },
@@ -22,7 +22,7 @@
     "instagramUrl": "https://www.instagram.com/reel/DIyP1QNMdlc/",
     "title": "Молитовний вечір",
     "description": "Щотижневий молитовний вечір у четвер о 19:00. Приходьте молитися разом",
-    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/469404728_18470406493019063_1157772772699854866_n.jpg",
+    "image": "../../assets/contacts/small-group.jpg",
     "date": "2024-12-19",
     "type": "prayer"
   },
@@ -31,16 +31,7 @@
     "instagramUrl": "https://www.instagram.com/p/DIbaIvAM1qx/",
     "title": "Різдвяні колядки",
     "description": "Вивчаємо традиційні українські колядки до Різдва. Приєднуйтесь до нашого хору",
-    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/468748252_18469759854019063_4782926540356816520_n.jpg",
-    "date": "2024-12-18",
-    "type": "community"
-  },
-  {
-    "id": "5",
-    "instagramUrl": "https://www.instagram.com/p/DIbaIvAM1qx/",
-    "title": "Різдвяні колядки",
-    "description": "Вивчаємо традиційні українські колядки до Різдва. Приєднуйтесь до нашого хору",
-    "image": "https://scontent-ham3-1.cdninstagram.com/v/t51.29350-15/468748252_18469759854019063_4782926540356816520_n.jpg",
+    "image": "../../assets/contacts/youth-events.jpg",
     "date": "2024-12-18",
     "type": "community"
   }
