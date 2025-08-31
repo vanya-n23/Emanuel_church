@@ -1,3 +1,4 @@
+/* ===== NEWS SECTION LAYOUT ===== */
 .news {
   background: #f8f9fa;
   padding: 60px 0;
@@ -18,10 +19,12 @@
 .news-container {
   position: relative;
   width: 100%;
+  padding: 0 50px;
 }
 
+/* ===== SWIPER CONFIGURATION ===== */
 .news-swiper {
-  overflow: visible;
+  overflow: hidden;
 }
 
 .news .swiper-wrapper {
@@ -34,6 +37,7 @@
   align-items: stretch;
 }
 
+/* ===== NEWS CARD STYLES ===== */
 .news-card {
   background: white;
   border-radius: 16px;
@@ -43,6 +47,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 500px;
+  max-height: 500px;
 }
 
 .news-card:hover {
@@ -50,6 +56,7 @@
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* ===== IMAGE SECTION ===== */
 .news-image {
   position: relative;
   height: 250px;
@@ -67,17 +74,14 @@
   transform: scale(1.05);
 }
 
+/* ===== OVERLAY & INTERACTION ===== */
 .news-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    45deg,
-    rgba(129, 52, 175, 0.8),
-    rgba(225, 48, 108, 0.8)
-  );
+  background: linear-gradient(45deg, rgba(129, 52, 175, 0.8), rgba(225, 48, 108, 0.8));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,6 +132,7 @@
   letter-spacing: 0.5px;
 }
 
+/* ===== CONTENT SECTION ===== */
 .news-content {
   padding: 24px;
   flex: 1;
@@ -158,6 +163,7 @@
   font-size: 14px;
 }
 
+/* ===== ACTIONS SECTION ===== */
 .news-actions {
   margin-top: 20px;
   padding-top: 20px;
@@ -184,6 +190,7 @@
   height: 16px;
 }
 
+/* ===== SWIPER NAVIGATION ===== */
 .news-container .swiper-pagination {
   text-align: center !important;
   position: relative !important;
@@ -235,6 +242,7 @@
   font-weight: bold;
 }
 
+/* ===== ERROR & LOADING STATES ===== */
 .error {
   text-align: center;
   padding: 60px 20px;
@@ -267,6 +275,7 @@
   color: #666;
 }
 
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .news {
     padding: 40px 0;
@@ -274,6 +283,10 @@
 
   .news-wrapper {
     padding: 0 15px;
+  }
+
+  .news-container {
+    padding: 0 40px;
   }
 
   .news-title {
@@ -289,6 +302,12 @@
     padding: 20px;
   }
 
+  /* Адаптивна висота для мобільних */
+  .news-card {
+    min-height: 420px;
+    max-height: 420px;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     width: 36px;
@@ -302,6 +321,10 @@
 }
 
 @media (max-width: 480px) {
+  .news-container {
+    padding: 0 30px;
+  }
+
   .news-image {
     height: 180px;
   }
@@ -312,5 +335,11 @@
 
   .news-title {
     font-size: 1.1em;
+  }
+
+  /* Ще більш компактні картки для дуже маленьких екранів */
+  .news-card {
+    min-height: 380px;
+    max-height: 380px;
   }
 }
