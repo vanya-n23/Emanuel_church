@@ -4,7 +4,7 @@
     "instagramUrl": "https://www.instagram.com/reel/DKtiYvPs5ok/",
     "title": "Недільне богослужіння 22 грудня",
     "description": "Запрошуємо всіх на недільне богослужіння. Тема проповіді: 'Готуємося до Різдва Христового'",
-    "image": "../../assets/contacts/sunday-service.jpg",
+    "image": "sunday-service",
     "date": "2024-12-22",
     "type": "service"
   },
@@ -13,7 +13,7 @@
     "instagramUrl": "https://www.instagram.com/reel/DKeB3JhMgmC/",
     "title": "Різдвяна програма для дітей",
     "description": "Дитяча різдвяна програма з піснями, іграми та подарунками від Святого Миколая",
-    "image": "../../assets/contacts/music-ministry.jpg",
+    "image": "music-ministry",
     "date": "2024-12-20",
     "type": "event"
   },
@@ -22,7 +22,7 @@
     "instagramUrl": "https://www.instagram.com/reel/DIyP1QNMdlc/",
     "title": "Молитовний вечір",
     "description": "Щотижневий молитовний вечір у четвер о 19:00. Приходьте молитися разом",
-    "image": "../../assets/contacts/small-group.jpg",
+    "image": "small-group",
     "date": "2024-12-19",
     "type": "prayer"
   },
@@ -31,7 +31,7 @@
     "instagramUrl": "https://www.instagram.com/p/DIbaIvAM1qx/",
     "title": "Різдвяні колядки",
     "description": "Вивчаємо традиційні українські колядки до Різдва. Приєднуйтесь до нашого хору",
-    "image": "../../assets/contacts/youth-events.jpg",
+    "image": "youth-events",
     "date": "2024-12-18",
     "type": "community"
   }

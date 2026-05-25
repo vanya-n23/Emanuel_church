@@ -1,48 +1,109 @@
 <header class="header">
   <div class="container">
     <a href="./index.html" class="logo-header">
-      <h1 class="title-logo-header-top">emmanuel</h1>
+      <span class="title-logo-header-top">emmanuel</span>
       <p class="title-logo-header-botoom">church</p>
     </a>
 
-    <ul class="nav-list">
-      <li class="nav-list-item">
-        <a class="nav-link" href="#aboutUS">Про церкву</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-link" href="#contacts">Служіння</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-link" href="#donation">Пожертвування</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-link" href="#contacts">Контакти</a>
-      </li>
-    </ul>
-    <button class="burger-btn" type="button" data-menu-open>
-      <svg class="burger-icon" width="24" height="24">
-        <use xlink:href="/assets/icons/sprite.svg#icon-burger-btn"></use>
-      </svg>
-    </button>
+    <nav class="desktop-nav" aria-label="Головна навігація">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-link" href="#aboutUS">Про церкву</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#ministry">Служіння</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#donation">Пожертвування</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#contacts">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switcher" data-language-switcher>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="UA - обрати мову" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-menu-desktop">
+          <span class="language-globe" aria-hidden="true"></span>
+          <span class="language-flag" data-language-flag aria-hidden="true">🇺🇦</span>
+          <span class="language-current" data-language-current>UA</span>
+          <span class="language-caret" aria-hidden="true"></span>
+        </button>
+        <ul class="language-menu" id="language-menu-desktop" role="listbox" aria-label="Мова сайту">
+          <li>
+            <button class="language-option" type="button" role="option" data-lang-option="ua">
+              <span class="language-flag" aria-hidden="true">🇺🇦</span>
+              <span>UA</span>
+            </button>
+          </li>
+          <li>
+            <button class="language-option" type="button" role="option" data-lang-option="sk">
+              <span class="language-flag" aria-hidden="true">🇸🇰</span>
+              <span>SK</span>
+            </button>
+          </li>
+          <li>
+            <button class="language-option" type="button" role="option" data-lang-option="en">
+              <span class="language-flag" aria-hidden="true">🇺🇸</span>
+              <span>EN</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="burger-btn" type="button" data-menu-open aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="burger-icon" width="24" height="24">
+          <use xlink:href="/assets/icons/sprite.svg#icon-burger-btn"></use>
+        </svg>
+      </button>
+    </div>
   </div>
-  <div class="mobile-menu" data-menu>
+  <div class="mobile-menu" id="mobile-menu" data-menu aria-hidden="true">
     <div class="mobile-menu-container">
-      <button class="mobile-menu-close" data-menu-close>
+      <button class="mobile-menu-close" type="button" data-menu-close aria-label="Закрити меню">
         <svg class="menu-close-icon" width="24" height="24">
-          <use href="../assets/icons/sprite.svg#icon-close"></use>
+          <use href="/assets/icons/sprite.svg#icon-close"></use>
         </svg>
       </button>
       <a href="./index.html" class="mobile-logo-header">
-        <h1 class="mobile-logo-top">emmanuel</h1>
+        <span class="mobile-logo-top">emmanuel</span>
         <p class="mobile-logo-bottom">church</p>
       </a>
+      <div class="language-switcher mobile-language-switcher" data-language-switcher>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="UA - обрати мову" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-menu-mobile">
+          <span class="language-globe" aria-hidden="true"></span>
+          <span class="language-flag" data-language-flag aria-hidden="true">🇺🇦</span>
+          <span class="language-current" data-language-current>UA</span>
+          <span class="language-caret" aria-hidden="true"></span>
+        </button>
+        <ul class="language-menu" id="language-menu-mobile" role="listbox" aria-label="Мова сайту">
+          <li>
+            <button class="language-option" type="button" role="option" data-lang-option="ua">
+              <span class="language-flag" aria-hidden="true">🇺🇦</span>
+              <span>UA</span>
+            </button>
+          </li>
+          <li>
+            <button class="language-option" type="button" role="option" data-lang-option="sk">
+              <span class="language-flag" aria-hidden="true">🇸🇰</span>
+              <span>SK</span>
+            </button>
+          </li>
+          <li>
+            <button class="language-option" type="button" role="option" data-lang-option="en">
+              <span class="language-flag" aria-hidden="true">🇺🇸</span>
+              <span>EN</span>
+            </button>
+          </li>
+        </ul>
+      </div>
       <nav class="mobile-menu-nav">
         <ul class="menu-nav-list">
           <li class="menu-nav-item">
             <a class="menu-nav-link" href="#aboutUS">Про церкву</a>
           </li>
           <li class="menu-nav-item">
-            <a class="menu-nav-link" href="#contacts">Служіння</a>
+            <a class="menu-nav-link" href="#ministry">Служіння</a>
           </li>
           <li class="menu-nav-item">
             <a class="menu-nav-link" href="#donation">Пожертвування</a>

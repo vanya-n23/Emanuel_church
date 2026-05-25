@@ -1,90 +1,67 @@
+.pastor-section {
+  background-color: var(--color-cream);
+}
+
 .pastor-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    gap: 30px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: minmax(270px, 380px) minmax(320px, 530px);
+  align-items: center;
+  justify-content: center;
+  gap: clamp(42px, 8vw, 92px);
+  padding-block: var(--section-padding);
 }
 
 .pastor-photo {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
 }
 
 .pastor-text {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-pastor-name {
-    font-size: 26px;
-    font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-burgundy);
+  font-family: "Codec Pro", sans-serif;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.15;
+  text-transform: uppercase;
 }
 
 .article-pastor-dscr-1 {
-    font-size: 18px;
+  margin-bottom: 30px;
+  color: var(--color-burgundy);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .article-pastor-dscr-2 {
-    font-size: 15px;
-    line-height: 1.4;
-    margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.65;
 }
 
-@media (min-width: 768px) {
-    .pastor-container {
-        padding: 60px 40px;
-        gap: 40px;
-    }
+@media (max-width: 767px) {
+  .pastor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: stretch;
+  }
 
-    .pastor-photo {
-        width: 300px;
-        height: 300px;
-    }
+  .pastor-photo {
+    max-width: 360px;
+  }
 
-    .title-pastor-name {
-        font-size: 30px;
-    }
+  .article-pastor-dscr-1 {
+    margin-bottom: 20px;
+  }
 
-    .article-pastor-dscr-1 {
-        font-size: 20px;
-    }
-
-    .article-pastor-dscr-2 {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .pastor-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: left;
-        padding: 80px 100px;
-        gap: 120px;
-        max-width: 1280px;
-        margin: 0 auto;
-    }
-
-    .pastor-photo {
-        width: 350px;
-        height: 350px;
-    }
-
-    .title-pastor-name {
-        font-size: 35px;
-    }
-
-    .article-pastor-dscr-1 {
-        font-size: 22px;
-    }
-
-    .article-pastor-dscr-2 {
-        font-size: 18px;
-    } 
+  .article-pastor-dscr-2 {
+    font-size: 16px;
+  }
 }

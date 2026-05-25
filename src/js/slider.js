@@ -1,8 +1,10 @@
 import Swiper from "swiper";
+import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".ministry-slider", {
+    modules: [Pagination],
     slidesPerView: 1.2,
     spaceBetween: 16,
     breakpoints: {
@@ -14,12 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".ministry-pagination",
       clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
     },
   });
 });

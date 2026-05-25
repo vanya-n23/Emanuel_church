@@ -49,6 +49,23 @@ const NEWS_TYPES = {
   community: "Спільнота",
 };
 
+const NEWS_IMAGES = {
+  "sunday-service": new URL(
+    "../assets/contacts/sunday-service.jpg",
+    import.meta.url
+  ).href,
+  "music-ministry": new URL(
+    "../assets/contacts/music-ministry.jpg",
+    import.meta.url
+  ).href,
+  "small-group": new URL("../assets/contacts/small-group.jpg", import.meta.url)
+    .href,
+  "youth-events": new URL(
+    "../assets/contacts/youth-events.jpg",
+    import.meta.url
+  ).href,
+};
+
 const INSTAGRAM_ICON_PATH = "M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.3-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0-2.2C8.7 0 8.3 0 7 .1 5.7.2 4.8.4 4.1.7c-.7.3-1.4.7-2 1.3C1.5 2.6 1.1 3.3.8 4c-.3.7-.5 1.6-.6 2.9C.1 8.3.1 8.7.1 12s0 3.7.1 5c.1 1.3.3 2.2.6 2.9.3.7.7 1.4 1.3 2 .6.6 1.3 1 2 1.3.7.3 1.6.5 2.9.6 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.2-.3 2.9-.6.7-.3 1.4-.7 2-1.3.6-.6 1-1.3 1.3-2 .3-.7.5-1.6.6-2.9.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.2-.6-2.9-.3-.7-.7-1.4-1.3-2-.6-.6-1.3-1-2-1.3-.7-.3-1.6-.5-2.9-.6C15.7.1 15.3.1 12 .1z";
 
 // Helper functions
@@ -63,6 +80,10 @@ function formatDate(dateString) {
     month: "long",
     day: "numeric",
   });
+}
+
+function getNewsImage(imageKey) {
+  return NEWS_IMAGES[imageKey] || imageKey;
 }
 
 function createInstagramIcon(size = 24, fill = "white") {
@@ -83,7 +104,7 @@ function createNewsSlide(item, index) {
   slide.innerHTML = `
     <article class="news-card">
       <div class="news-image">
-        <img src="${item.image}" alt="${item.title}" loading="lazy" />
+        <img src="${getNewsImage(item.image)}" alt="${item.title}" loading="lazy" />
         <div class="news-overlay">
           <button class="view-full-post" data-url="${item.instagramUrl}">
             ${createInstagramIcon()}

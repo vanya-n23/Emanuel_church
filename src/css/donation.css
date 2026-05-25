@@ -1,88 +1,131 @@
 .donation__section {
-  
-  display: flex;
-  padding-block: 60px 80px;
-  font-family: "Gilroy";
-  font-size: 18px;
-
-  background-image: url("../images/donation-bg.png");
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  padding: var(--section-padding) 0;
+  background:
+    linear-gradient(rgba(254, 250, 238, 0.9), rgba(254, 250, 238, 0.9)),
+    url("../images/donation-bg-clean.jpg") center / cover no-repeat;
 }
 
-.donation__card {
-  max-width: 1000px;
+.donation__inner {
+  position: relative;
+  width: min(100% - 64px, var(--content-width));
   margin: 0 auto;
-  padding: 24px;
-  border: 1px solid black;
-  border-radius: 12px;
-  background-color: white;
+  display: grid;
+  grid-template-columns: minmax(360px, 1.05fr) minmax(300px, 0.95fr);
+  column-gap: clamp(42px, 8vw, 100px);
+  row-gap: 42px;
+  align-items: start;
 }
 
 .donation__title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  font-style: italic;
+  margin-bottom: 22px;
+  color: var(--color-burgundy);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+  font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .donation__text {
-  line-height: 1.5;
-  text-align: center;
-  max-width: 600px;
+  max-width: 480px;
+  margin-bottom: 34px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .donation__details {
-  display: flex;
-  margin-top: 30px;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  gap: 0;
+  max-width: 520px;
+}
+
+.donation__details li {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(125, 2, 32, 0.2);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.donation__details strong {
+  color: var(--color-burgundy);
+  font-weight: 700;
+}
+
+.donation__aside {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  align-self: end;
+  padding-bottom: 20px;
+}
+
+.donation__qr {
+  width: 132px;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.donation__qr-label {
+  color: var(--color-burgundy);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.donation__quote {
+  grid-column: 1 / -1;
+  width: min(100%, 860px);
+  margin: 8px auto 0;
+  color: var(--color-burgundy);
+  font-family: "Gilroy", sans-serif;
+}
+
+.donation__quote p {
+  margin-bottom: 16px;
+  font-size: clamp(21px, 2.2vw, 28px);
+  line-height: 1.42;
   text-align: center;
-
-  ul {
-    display: grid;
-    gap: 12px;
-  }
-
-  img {
-    width: 150px;
-    height: 150px;
-  }
 }
 
-@media screen and (min-width: 600px) {
-  .donation__card {
-    padding: 32px;
-  }
-  .donation__title {
-    font-size: 32px;
-    margin-bottom: 16px;
-  }
-  .donation__details {
-    gap: 10px;
-    margin-top: 52px;
-    text-align: start;
-    flex-direction: row;
-
-    img {
-      width: 100px;
-      height: 100px;
-    }
-  }
+.donation__quote cite {
+  display: block;
+  color: var(--color-ink);
+  font-family: "Gilroy", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
 }
 
-@media screen and (min-width: 900px) {
-  .donation__section {
-    font-size: 20px;
+@media (max-width: 767px) {
+  .donation__inner {
+    width: min(100% - 40px, var(--content-width));
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
   }
-  .donation__card {
-    padding: 40px;
+
+  .donation__details li {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
-  .donation__text {
-    max-width: 700px;
+
+  .donation__aside {
+    order: 3;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-items: start;
+  }
+
+  .donation__quote {
+    order: 2;
+  }
+
+  .donation__quote p {
+    text-align: left;
   }
 }

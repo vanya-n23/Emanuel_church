@@ -1,188 +1,223 @@
-h2 {
-  font-style: italic;
-  font-size: 46px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.article-contact-links {
-  font-size: 22px;
-}
-
 .contacts-section {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
+.contacts-inner,
 .contacts-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 80px 100px;
-  background-color: #b9cad1;
-  justify-content: space-between;
+  width: min(100% - 64px, var(--content-width));
+  margin: 0 auto;
 }
 
-.contacts {
-  font-style: normal;
+.ministry-block {
+  padding: var(--section-padding) 0;
+  background-color: var(--color-blue);
 }
 
-.contacts-item {
-  font-size: 24px;
+.ministry-title,
+.contacts-title {
+  margin-bottom: 42px;
+  color: var(--color-burgundy);
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.15;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.social-block {
-  padding-top: 20px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 20px;
-  margin-top: 16px;
-}
-
-.icon-wrapper {
-  width: 52px;
-  height: 52px;
-  background-color: #181001;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.icon-wrapper:hover {
-  background-color: #7d0220;
-  transform: scale(1.1);
-}
-
-.icon {
-  width: 28px;
-  height: 28px;
-  fill: #b9cad1;
-  transition: fill 0.3s, transform 0.2s;
-}
-
-.icon:hover {
-  fill: #b9cad1;
-  transform: scale(1.1);
-}
-
-.map-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 60px 70px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  max-width: 500px;
-  width: 100%;
-}
-
-.map-image {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  object-fit: cover;
-}
-
-.location-text {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  font-family: "Gilroy", sans-serif;
-  color: #1b1011;
-}
-
-.location-text p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-.location-text strong {
-  font-weight: 600;
-  display: block;
-}
-
-/* Swiper */
 .ministry-slider {
-  position: relative;
-  padding-bottom: 40px;
-  padding: 20px;
+  width: min(100% - 64px, var(--content-width));
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.swiper-wrapper {
-  background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.ministry-slider .swiper-wrapper {
+  padding: 0;
+  background-color: transparent;
+}
+
+.ministry-slider .swiper-slide {
+  height: auto;
+}
+
+.ministry-pagination {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.ministry-pagination .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  background-color: rgba(125, 2, 32, 0.3);
+  opacity: 1;
+}
+
+.ministry-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-burgundy);
 }
 
 .card {
   position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
   display: block;
-  text-decoration: none;
-}
-.card:hover {
-  transform: scale(1.02);
+  height: 350px;
+  overflow: hidden;
+  border-radius: var(--radius);
 }
 
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
+  transition: transform 260ms ease;
 }
+
 .card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 60%);
-  z-index: 1;
+  background: linear-gradient(to top, rgba(24, 16, 1, 0.62), transparent 54%);
+}
+
+.card:hover img {
+  transform: scale(1.04);
 }
 
 .card-overlay {
   position: absolute;
-  z-index: 2;
-  bottom: 50px;
-  width: 100%;
-  padding: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  /* font-family: "Gilroy", sans-serif; */
+  z-index: 1;
+  left: 20px;
+  bottom: 20px;
+  color: var(--color-white);
 }
 
 .card-overlay h3 {
   font-size: 18px;
-  font-weight: 800;
-  margin: 0;
-  line-height: 1.2;
+  line-height: 1.25;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #7d0220; /* Burgundy */
+.contact-band {
+  padding: var(--section-padding) 0;
+  background-color: var(--color-white);
 }
 
-.swiper-pagination-bullet-active {
-  background-color: #7d0220;
+.contacts-wrapper {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(340px, 500px);
+  gap: clamp(42px, 7vw, 88px);
+  align-items: stretch;
 }
 
-/* MOBILE */
-@media screen and (min-width: 320px) and (max-width: 900px) {
-  .contacts-wrapper {
-    justify-content: center;
-    padding: 60px 30px;
+.contacts {
+  font-style: normal;
+}
+
+.contacts-list {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.contacts-item {
+  font-size: clamp(20px, 2.5vw, 25px);
+}
+
+.contacts-item a:hover,
+.contacts-item a:focus {
+  color: var(--color-burgundy);
+}
+
+.article-contact-links {
+  margin-bottom: 16px;
+  color: var(--color-burgundy);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--color-cream);
+  background-color: var(--color-burgundy);
+  border-radius: 50%;
+  transition: background-color 200ms ease;
+}
+
+.icon-wrapper:hover,
+.icon-wrapper:focus {
+  background-color: var(--color-ink);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.map-block {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  overflow: hidden;
+  background-color: var(--color-white);
+  border-radius: var(--radius);
+}
+
+.map-image {
+  width: 100%;
+  height: 252px;
+  object-fit: cover;
+}
+
+.location-text {
+  display: grid;
+  gap: 7px;
+  padding: 20px 24px 23px;
+  color: var(--color-ink);
+}
+
+.location-text strong {
+  color: var(--color-burgundy);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.location-text span {
+  font-size: 18px;
+}
+
+.map-action {
+  margin-top: 8px;
+  color: var(--color-burgundy);
+  font-size: 14px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .contacts-inner,
+  .contacts-wrapper,
+  .ministry-slider {
+    width: min(100% - 40px, var(--content-width));
   }
 
-  .social-block {
-    padding-bottom: 20px;
+  .ministry-title,
+  .contacts-title {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    height: 300px;
+  }
+
+  .contacts-wrapper {
+    grid-template-columns: 1fr;
   }
 }
