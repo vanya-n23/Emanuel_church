@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "description": "Emmanuel Church in Bratislava: worship services, ministries, news, giving and contact information."
+  },
+  "accessibility": {
+    "skip": "Skip to main content"
+  },
+  "navigation": {
+    "ariaLabel": "Main navigation",
+    "about": "About",
+    "ministry": "Ministries",
+    "donation": "Giving",
+    "contacts": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "language": {
+    "siteLabel": "Site language",
+    "selectLabel": "{code} - select language"
+  },
+  "hero": {
+    "title": "A CONTEMPORARY CHRISTIAN CHURCH IN BRATISLAVA",
+    "schedule": "SUNDAYS AT | 10:00",
+    "cta": "Learn more"
+  },
+  "about": {
+    "title": "About us",
+    "paragraph1": "Emmanuel Church is a Christian community for Ukrainians in Bratislava.",
+    "paragraph2": "We gather every Sunday at 10:00 for worship, prayer and fellowship.",
+    "paragraph3": "We welcome families, young people and everyone seeking spiritual support and a living community."
+  },
+  "vision": {
+    "title": "Church vision",
+    "item1Title": "1. Worship",
+    "item1Text": "We gather to glorify God, pray and listen to His Word.",
+    "item2Title": "2. Community",
+    "item2Text": "We build open relationships where people can find support and a home.",
+    "item3Title": "3. Growth",
+    "item3Text": "We help everyone grow in faith through learning, prayer and ministry.",
+    "item4Title": "4. Care",
+    "item4Text": "We serve people in Bratislava with love, attention and practical help."
+  },
+  "creed": {
+    "kicker": "What we believe",
+    "title": "Statement of Faith",
+    "intro": "Our statement of faith presents the Christian convictions on which the life and ministry of Emmanuel Church are built.",
+    "accordionLabel": "Articles of faith",
+    "download": "Download PDF",
+    "fileInfo": "PDF, 58 KB",
+    "items": [
+      {
+        "title": "1. Jesus Christ",
+        "paragraphs": [
+          "We believe that Jesus Christ is God, Savior and Lord of all creation; He is the perfect revelation of God and the only mediator between God and humanity. He was conceived by the Holy Spirit, born of the Virgin Mary, lived a sinless life, died on the cross for the sins of humanity, rose bodily from the dead, ascended to the Father, and will return again in power and glory.",
+          "We believe that God the Son is uncreated and eternally begotten of the Father, of one essence with the Father and possessing all divine attributes. For the salvation of humanity He became incarnate without ceasing to be divine; therefore Jesus Christ is true God and true Man."
+        ]
+      },
+      {
+        "title": "2. God",
+        "paragraphs": [
+          "We believe in one omnipotent and eternal God who exists as Father, Son and Holy Spirit: three divine persons sharing one divine essence and eternal life. God is holy, all-knowing, everywhere present, Creator and Sustainer of all things, worthy of all worship and glory.",
+          "We believe that God the Father is uncreated, eternal, and the source through whom all things exist. He is holy, good, righteous, and the Father of our Lord Jesus Christ.",
+          "We believe that God the Holy Spirit is uncreated, proceeding from the Father through the Son, equal with the Father and the Son, glorifying Christ, convicting of sin, regenerating believers, and leading the Church in truth and sanctification."
+        ]
+      },
+      {
+        "title": "3. Humanity",
+        "paragraphs": [
+          "We believe that human beings are created in the image and likeness of God for fellowship with Him, worship, stewardship of creation, and holy living. God created humanity with free will and the responsibility to choose between good and evil.",
+          "We believe that human beings belong both to the physical (visible) world and the spiritual (invisible) realm. Through sin humanity became spiritually dead, inherited a sinful nature, and became subject to physical death. As a result of the fall, humanity cannot by its own power find God apart from divine grace; therefore, all people need redemption through Jesus Christ."
+        ]
+      },
+      {
+        "title": "4. Redemption",
+        "paragraphs": [
+          "We believe that God foresaw the fall of humanity and prepared a plan of salvation according to which Christ was the Lamb slain from the foundation of the world.",
+          "We believe that the cross and resurrection of Jesus Christ provide the only redemption from sin. Christ bore the sins of humanity, satisfied divine justice, and accomplished complete salvation for all who believe."
+        ]
+      },
+      {
+        "title": "5. Salvation by Grace",
+        "paragraphs": [
+          "We believe that salvation is by God’s grace alone through personal faith in Jesus Christ and not by human works. Through repentance and faith, sinners receive forgiveness, justification, regeneration, adoption into God’s family, and eternal life. Good works are the fruit of the Holy Spirit dwelling in believers and witness of the authentic Christian life."
+        ]
+      },
+      {
+        "title": "6. Conversion",
+        "paragraphs": [
+          "We believe that authentic Christian life begins with conversion to Christ through repentance and faith. Repentance and conversion include sorrow for committed sin, confession of sin before God, turning away from sin, and accepting Jesus Christ as personal Savior. The Holy Spirit leads people to repentance through the Word of God. Conversion results in new birth from above — the resurrection of a person from spiritual death into new life, rather than the reformation of the sinful human nature — transformed life, and growth in holiness."
+        ]
+      },
+      {
+        "title": "7. Scripture and Ecumenical Councils",
+        "paragraphs": [
+          "We believe that the sixty-six books of Holy Scripture are inspired by the Holy Spirit and are the supreme, sufficient, and trustworthy authority for Christian faith and life. Jesus Christ is the center and fulfillment of Scripture. We agree with most of the results of the first four ecumenical councils."
+        ]
+      },
+      {
+        "title": "8. The Church",
+        "paragraphs": [
+          "The Church is the new people of God, the invisible temple of the Lord, and a living spiritual organism whose Head is Jesus Christ.",
+          "We believe that the universal Church is the Body of Christ composed of all born-again believers from every nation and generation. The universal Church of Christ is not a continuation of Old Testament Israel, but was established by Jesus Christ on the Day of Pentecost upon the foundation of the apostles and prophets, with Jesus Christ Himself being the chief cornerstone. Belonging to the universal Church does not remove the responsibility of belonging to a local church, the only place believers can fulfill their responsibilities toward brothers and sisters in Christ.",
+          "We believe that the local church is a group of Christians who meet regularly in the name of Christ to publicly affirm their faith and to care for one another’s commitment to Jesus Christ and His Kingdom through the preaching of the Gospel, the sacraments and practicing of church discipline."
+        ]
+      },
+      {
+        "title": "9. The Lord’s Return and Last Things",
+        "paragraphs": [
+          "We believe that Jesus Christ will return again in power and glory, raise the dead, judge all humanity, establish His eternal kingdom, and bring everlasting life to the redeemed and eternal punishment to those who reject Him."
+        ]
+      }
+    ]
+  },
+  "ministry": {
+    "kicker": "Church life",
+    "title": "Ministries",
+    "ariaLabel": "Ministry areas",
+    "smallGroups": "Small groups",
+    "services": "Sunday services",
+    "youth": "Youth events",
+    "music": "Music ministry"
+  },
+  "pastor": {
+    "photoAlt": "Pastor Oleksandr Novikov",
+    "name": "Oleksandr Novikov",
+    "role": "church pastor",
+    "description": "Oleksandr Novikov serves as the pastor of Emmanuel Church in Bratislava. His desire is to help people know God, find support in community and grow in faith."
+  },
+  "news": {
+    "title": "Church News",
+    "loading": "Loading news...",
+    "next": "Next news item",
+    "previous": "Previous news item",
+    "fullPost": "Full post",
+    "viewInstagram": "View on Instagram",
+    "error": "Unable to load news.",
+    "retry": "Try again",
+    "empty": "There is no news yet.",
+    "defaultType": "News",
+    "types": {
+      "service": "Service",
+      "event": "Event",
+      "announcement": "Announcement",
+      "prayer": "Prayer",
+      "community": "Community"
+    },
+    "items": {
+      "1": {
+        "title": "Sunday service on December 22",
+        "description": "Everyone is welcome at our Sunday service. Sermon topic: 'Preparing for the Birth of Christ'"
+      },
+      "2": {
+        "title": "Christmas program for children",
+        "description": "A children's Christmas program with songs, games and gifts from Saint Nicholas"
+      },
+      "3": {
+        "title": "Prayer evening",
+        "description": "Weekly prayer evening on Thursday at 19:00. Come and pray with us"
+      },
+      "4": {
+        "title": "Christmas carols",
+        "description": "We are learning traditional Ukrainian Christmas carols. Join our choir"
+      }
+    }
+  },
+  "donation": {
+    "kicker": "Support the ministry",
+    "title": "Giving",
+    "text": "If you would like to support our church, you can make a voluntary contribution to our bank account:",
+    "recipient": "Recipient",
+    "recipientValue": "Emmanuel Church",
+    "purpose": "Reference",
+    "purposeValue": "Voluntary donation",
+    "qrAlt": "QR code for donating to Emmanuel Church",
+    "qrLabel": "Scan to donate",
+    "quote": "“Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver.”",
+    "citation": "2 Corinthians 9:7"
+  },
+  "contacts": {
+    "kicker": "Visit us",
+    "title": "Contact us",
+    "schedule": "Sundays at 10:00",
+    "social": "Follow us",
+    "mapAlt": "Map showing Emmanuel Church location at Bazova 8 in Bratislava",
+    "location": "Our location",
+    "route": "Get directions"
+  },
+  "footer": {
+    "church": "EMMANUEL CHURCH | BRATISLAVA",
+    "socialFirst": "OUR",
+    "socialSecond": "SOCIAL MEDIA:",
+    "metaAria": "Website information",
+    "design": "Design: Alina Synytska",
+    "updated": "Updated: 2026"
+  }
+}

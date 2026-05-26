@@ -1,3 +1,5 @@
+import { getLanguage, setLanguage, translate } from "./i18n";
+
 document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector("[data-menu]");
   const closeBtn = document.querySelector("[data-menu-close]");
@@ -7,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const languageToggles = document.querySelectorAll("[data-language-toggle]");
   const languageOptions = document.querySelectorAll("[data-lang-option]");
   const languageCurrent = document.querySelectorAll("[data-language-current]");
-  const languageFlags = document.querySelectorAll("[data-language-flag]");
+  const currentLanguageFlags = document.querySelectorAll("[data-language-flag-current]");
   const languageCodes = ["ua", "sk", "en"];
   const languageFlagMap = {
     ua: "🇺🇦",
@@ -15,10 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     en: "🇺🇸",
   };
 
-  const savedLanguage = localStorage.getItem("siteLanguage");
-  let currentLanguage = languageCodes.includes(savedLanguage)
-    ? savedLanguage
-    : "ua";
+  let currentLanguage = getLanguage();
 
   function closeLanguageMenus() {
     languageSwitchers.forEach((switcher) => {
@@ -31,8 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateLanguage(language) {
     currentLanguage = languageCodes.includes(language) ? language : "ua";
-    localStorage.setItem("siteLanguage", currentLanguage);
-    document.documentElement.lang = currentLanguage === "ua" ? "uk" : currentLanguage;
+    setLanguage(currentLanguage);
 
     languageCurrent.forEach((current) => {
       current.textContent = currentLanguage.toUpperCase();
@@ -41,11 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
     languageToggles.forEach((toggle) => {
       toggle.setAttribute(
         "aria-label",
-        `${currentLanguage.toUpperCase()} - обрати мову`
+        translate("language.selectLabel", currentLanguage).replace(
+          "{code}",
+          currentLanguage.toUpperCase()
+        )
       );
     });
 
-    languageFlags.forEach((flag) => {
+    currentLanguageFlags.forEach((flag) => {
       flag.textContent = languageFlagMap[currentLanguage];
     });
 

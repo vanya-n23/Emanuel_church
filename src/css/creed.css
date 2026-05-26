@@ -1,0 +1,129 @@
+.creed-section {
+  padding: var(--section-padding) 0;
+  background-color: var(--color-cream);
+}
+
+.creed-container {
+  width: min(100% - 64px, var(--content-width));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(480px, 1fr);
+  gap: clamp(44px, 7vw, 92px);
+  align-items: start;
+}
+
+.creed-heading {
+  position: sticky;
+  top: 108px;
+}
+
+.creed-title {
+  margin-bottom: 22px;
+  color: var(--color-burgundy);
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.15;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.creed-intro {
+  margin-bottom: 34px;
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.creed-download {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 20px;
+  color: var(--color-cream);
+  background-color: var(--color-burgundy);
+  border-radius: var(--radius);
+  font-weight: 700;
+}
+
+.creed-file-info {
+  color: rgba(254, 250, 238, 0.74);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.creed-accordion {
+  border-bottom: 1px solid rgba(125, 2, 32, 0.22);
+}
+
+.creed-item {
+  border-top: 1px solid rgba(125, 2, 32, 0.22);
+}
+
+.creed-summary {
+  position: relative;
+  padding: 24px 48px 24px 0;
+  color: var(--color-burgundy);
+  font-family: "Codec Pro", sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+  list-style: none;
+  cursor: pointer;
+}
+
+.creed-summary::-webkit-details-marker {
+  display: none;
+}
+
+.creed-summary::before,
+.creed-summary::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  width: 18px;
+  height: 2px;
+  background-color: var(--color-burgundy);
+  transform: translateY(-50%);
+}
+
+.creed-summary::after {
+  transform: translateY(-50%) rotate(90deg);
+  transition: transform 180ms ease;
+}
+
+.creed-item[open] .creed-summary::after {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.creed-content {
+  max-width: 700px;
+  padding: 0 48px 27px 0;
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.creed-content p + p {
+  margin-top: 17px;
+}
+
+@media (max-width: 899px) {
+  .creed-container {
+    width: min(100% - 40px, var(--content-width));
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .creed-heading {
+    position: static;
+  }
+}
+
+@media (max-width: 767px) {
+  .creed-summary {
+    padding-block: 19px;
+    font-size: 18px;
+  }
+
+  .creed-content {
+    padding: 0 30px 23px 0;
+    font-size: 16px;
+  }
+}

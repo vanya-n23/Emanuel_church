@@ -3,6 +3,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { getLanguage, LANGUAGE_CHANGED_EVENT, translate } from "./i18n";
 
 // Constants
 const SWIPER_CONFIG = {
@@ -41,12 +42,10 @@ const SWIPER_CONFIG = {
   },
 };
 
-const NEWS_TYPES = {
-  service: "Богослужіння",
-  event: "Подія",
-  announcement: "Оголошення",
-  prayer: "Молитва",
-  community: "Спільнота",
+const DATE_LOCALES = {
+  ua: "uk-UA",
+  sk: "sk-SK",
+  en: "en-US",
 };
 
 const NEWS_IMAGES = {
@@ -70,12 +69,13 @@ const INSTAGRAM_ICON_PATH = "M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .
 
 // Helper functions
 function getNewsTypeLabel(type) {
-  return NEWS_TYPES[type] || "Новини";
+  const label = translate(`news.types.${type}`);
+  return label === `news.types.${type}` ? translate("news.defaultType") : label;
 }
 
 function formatDate(dateString) {
   const date = new Date(dateString);
-  return date.toLocaleDateString("uk-UA", {
+  return date.toLocaleDateString(DATE_LOCALES[getLanguage()], {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -97,6 +97,8 @@ function createInstagramIcon(size = 24, fill = "white") {
 }
 
 function createNewsSlide(item, index) {
+  const title = translate(`news.items.${item.id}.title`);
+  const description = translate(`news.items.${item.id}.description`);
   const slide = document.createElement("div");
   slide.className = "swiper-slide";
   slide.setAttribute("data-slide-index", index);
@@ -104,22 +106,22 @@ function createNewsSlide(item, index) {
   slide.innerHTML = `
     <article class="news-card">
       <div class="news-image">
-        <img src="${getNewsImage(item.image)}" alt="${item.title}" loading="lazy" />
+        <img src="${getNewsImage(item.image)}" alt="${title}" loading="lazy" />
         <div class="news-overlay">
           <button class="view-full-post" data-url="${item.instagramUrl}">
             ${createInstagramIcon()}
-            <span>Повний пост</span>
+            <span>${translate("news.fullPost")}</span>
           </button>
         </div>
         <div class="news-type">${getNewsTypeLabel(item.type)}</div>
       </div>
       <div class="news-content">
         <time class="news-date">${formatDate(item.date)}</time>
-        <h3 class="news-subtitle">${item.title}</h3>
-        <p class="news-description">${item.description}</p>
+        <h3 class="news-subtitle">${title}</h3>
+        <p class="news-description">${description}</p>
         <div class="news-actions">
           <a href="${item.instagramUrl}" target="_blank" rel="noopener" class="news-link">
-            <span>Переглянути в Instagram</span>
+            <span>${translate("news.viewInstagram")}</span>
             ${createInstagramIcon(16, "currentColor")}
           </a>
         </div>
@@ -160,11 +162,12 @@ function setupEventHandlers() {
   });
 }
 
-function setupResizeHandler(swiper) {
+function setupResizeHandler(getSwiper) {
   let resizeTimeout;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
+      const swiper = getSwiper();
       if (swiper) {
         swiper.update();
       }
@@ -188,40 +191,66 @@ function renderNews(newsData, container) {
   });
 }
 
-function showErrorMessage(container, message = "Помилка при завантаженні новин.") {
+function showErrorMessage(container) {
   container.innerHTML = `
     <div class="error">
-      <p>${message}</p>
-      <button onclick="location.reload()">Спробувати знову</button>
+      <p>${translate("news.error")}</p>
+      <button onclick="location.reload()">${translate("news.retry")}</button>
     </div>
   `;
 }
 
-function showEmptyMessage(container, message = "Новин поки немає.") {
-  container.innerHTML = `<p>${message}</p>`;
+function showEmptyMessage(container) {
+  container.innerHTML = `<p>${translate("news.empty")}</p>`;
 }
 
 // Main function
 document.addEventListener("DOMContentLoaded", async () => {
   const newsContainer = document.getElementById("news-slides");
+  let newsData = [];
   let swiper = null;
+  let state = "loading";
 
-  try {
-    const newsData = await loadNewsData();
+  function renderCurrentLanguage() {
+    if (state === "error") {
+      showErrorMessage(newsContainer);
+      return;
+    }
 
-    if (!newsData.length) {
+    if (state === "empty") {
       showEmptyMessage(newsContainer);
       return;
     }
 
+    if (state !== "loaded") {
+      return;
+    }
+
+    if (swiper) {
+      swiper.destroy(true, true);
+    }
+
     renderNews(newsData, newsContainer);
     swiper = initializeSwiper();
-    setupEventHandlers();
-    
-    if (swiper) {
-      setupResizeHandler(swiper);
+  }
+
+  document.addEventListener(LANGUAGE_CHANGED_EVENT, renderCurrentLanguage);
+
+  try {
+    newsData = await loadNewsData();
+
+    if (!newsData.length) {
+      state = "empty";
+      showEmptyMessage(newsContainer);
+      return;
     }
+
+    state = "loaded";
+    renderCurrentLanguage();
+    setupEventHandlers();
+    setupResizeHandler(() => swiper);
   } catch (error) {
+    state = "error";
     showErrorMessage(newsContainer);
   }
 });

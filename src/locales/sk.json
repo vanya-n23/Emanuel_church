@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "description": "Cirkev Emmanuel v Bratislave: bohoslužby, služby, novinky, dary a kontakty."
+  },
+  "accessibility": {
+    "skip": "Preskočiť na hlavný obsah"
+  },
+  "navigation": {
+    "ariaLabel": "Hlavná navigácia",
+    "about": "O cirkvi",
+    "ministry": "Služby",
+    "donation": "Dary",
+    "contacts": "Kontakt",
+    "openMenu": "Otvoriť menu",
+    "closeMenu": "Zavrieť menu"
+  },
+  "language": {
+    "siteLabel": "Jazyk stránky",
+    "selectLabel": "{code} - vybrať jazyk"
+  },
+  "hero": {
+    "title": "MODERNÁ KRESŤANSKÁ CIRKEV V BRATISLAVE",
+    "schedule": "KAŽDÚ NEDEĽU O | 10:00",
+    "cta": "Zistiť viac"
+  },
+  "about": {
+    "title": "O nás",
+    "paragraph1": "Cirkev Emmanuel je kresťanské spoločenstvo pre Ukrajincov v Bratislave.",
+    "paragraph2": "Stretávame sa každú nedeľu o 10:00 na uctievanie, modlitbu a spoločenstvo.",
+    "paragraph3": "Pozývame rodiny, mladých ľudí aj každého, kto hľadá duchovnú podporu a živé spoločenstvo."
+  },
+  "vision": {
+    "title": "Vízia cirkvi",
+    "item1Title": "1. Uctievanie",
+    "item1Text": "Stretávame sa, aby sme oslavovali Boha, modlili sa a počúvali Jeho Slovo.",
+    "item2Title": "2. Spoločenstvo",
+    "item2Text": "Budujeme otvorené vzťahy, v ktorých ľudia môžu nájsť podporu a domov.",
+    "item3Title": "3. Rast",
+    "item3Text": "Pomáhame každému rásť vo viere prostredníctvom učenia, modlitby a služby.",
+    "item4Title": "4. Starostlivosť",
+    "item4Text": "Slúžime ľuďom v Bratislave s láskou, pozornosťou a praktickou pomocou."
+  },
+  "creed": {
+    "kicker": "Čomu veríme",
+    "title": "Vyznanie viery",
+    "intro": "Naše vyznanie viery predstavuje kresťanské presvedčenia, na ktorých stojí život a služba cirkvi Emmanuel.",
+    "accordionLabel": "Články vyznania viery",
+    "download": "Stiahnuť PDF",
+    "fileInfo": "PDF, 58 KB",
+    "items": [
+      {
+        "title": "1. Ježiš Kristus",
+        "paragraphs": [
+          "Veríme, že Ježiš Kristus je Boh, Spasiteľ a Pán celého stvorenia; je dokonalým zjavením Boha a jediným Prostredníkom medzi Bohom a ľuďmi. Bol počatý z Ducha Svätého, narodený z Panny Márie, žil bez hriechu, zomrel na kríži za hriechy ľudstva, telesne vstal z mŕtvych, vystúpil k Otcovi a znovu príde v moci a sláve.",
+          "Veríme, že Boh Syn je nestvorený a večne zrodený od Otca, jednej podstaty s Otcom a majúci všetky Božské vlastnosti. Pre spásu ľudstva sa vtělil bez toho, aby prestal byť Bohom; preto je Ježiš Kristus pravý Boh a pravý človek."
+        ]
+      },
+      {
+        "title": "2. Boh",
+        "paragraphs": [
+          "Veríme v jedného všemohúceho a večného Boha, ktorý existuje ako Otec, Syn a Duch Svätý: tri Božské osoby v jednej Božskej podstate a večnom živote. Boh je svätý, vševediaci, všadeprítomný, Stvoriteľ a Udržiavateľ všetkého, hodný všetkej úcty a slávy.",
+          "Veríme, že Boh Otec je nestvorený, večný a zdrojom všetkého bytia. Je svätý, dobrý, spravodlivý a Otec nášho Pána Ježiša Krista.",
+          "Veríme, že Boh Duch Svätý je nestvorený, vychádza od Otca skrze Syna, je rovný Otcovi a Synovi, oslavuje Krista, usvedčuje z hriechu, znovuzrodzuje veriacich a vedie Cirkev v pravde a posvätení."
+        ]
+      },
+      {
+        "title": "3. Človek",
+        "paragraphs": [
+          "Veríme, že človek bol stvorený na Boží obraz a podobu pre spoločenstvo s Bohom, uctievanie, spravovanie stvorenia a svätý život. Boh stvoril človeka so slobodnou vôľou a zodpovednosťou rozhodovať sa medzi dobrom a zlom.",
+          "Veríme, že človek patrí do fyzického (viditeľného) sveta aj do duchovnej (neviditeľnej) reality. Skrze hriech sa ľudstvo stalo duchovne mŕtvym, zdedilo hriešnu prirodzenosť a podľahlo fyzickej smrti. Dôsledkom pádu je, že človek nemôže vlastnou silou nájsť Boha bez Božej milosti; preto všetci ľudia potrebujú spasenie skrze Ježiša Krista."
+        ]
+      },
+      {
+        "title": "4. Vykúpenie",
+        "paragraphs": [
+          "Veríme, že Boh predvídal pád ľudstva a pripravil plán spásy, podľa ktorého bol Kristus Baránkom zabitým od založenia sveta.",
+          "Veríme, že kríž a zmŕtvychvstanie Ježiša Krista poskytujú jediné vykúpenie z hriechu. Kristus niesol hriechy ľudstva, naplnil Božiu spravodlivosť a priniesol úplné spasenie všetkým, ktorí veria."
+        ]
+      },
+      {
+        "title": "5. Spasenie z milosti",
+        "paragraphs": [
+          "Veríme, že spasenie je jedine z Božej milosti skrze osobnú vieru v Ježiša Krista, a nie zo skutkov človeka. Skrze pokánie a vieru dostáva hriešnik odpustenie, ospravedlnenie, znovuzrodenie, prijatie do Božej rodiny a večný život. Dobré skutky sú ovocím prebývania Ducha Svätého vo veriacich a svedectvom pravého kresťanského života."
+        ]
+      },
+      {
+        "title": "6. Obrátenie",
+        "paragraphs": [
+          "Veríme, že pravý kresťanský život začína obrátením ku Kristovi skrze pokánie a vieru. Pokánie a obrátenie zahŕňajú ľútosť nad spáchaným hriechom, vyznanie hriechu pred Bohom, odvrátenie sa od hriechu a prijatie Ježiša Krista ako osobného Spasiteľa. Duch Svätý vedie človeka k pokániu skrze Božie Slovo. Obrátenie prináša nové narodenie zhora — vzkriesenie človeka z duchovnej smrti do nového života, a nie prerobenie hriešnej prirodzenosti človeka — premenený život a rast vo svätosti."
+        ]
+      },
+      {
+        "title": "7. Sväté písmo a ekumenický koncily",
+        "paragraphs": [
+          "Veríme, že šesťdesiatšesť kníh Svätého písma je inšpirovaných Duchom Svätým a je najvyššou, dostatočnou a spoľahlivou autoritou pre kresťanskú vieru a život. Ježiš Kristus je stredom a naplnením Písma. Súhlasíme s väčšinou rozhodnutí prvých štyroch ekumenických koncilov."
+        ]
+      },
+      {
+        "title": "8. Cirkev",
+        "paragraphs": [
+          "Cirkev je novým Božím ľudom, neviditeľným chrámom Pána a živým duchovným organizmom, ktorého Hlavou je Ježiš Kristus.",
+          "Veríme, že všeobecná Cirkev je Telom Kristovým a pozostáva zo všetkých znovuzrodených veriacich zo všetkých národov a generácií. Všeobecná Kristova Cirkev nie je pokračovaním starozákonného Izraela, ale bola založená Ježišom Kristom v deň Letníc na základe apoštolov a prorokov, pričom samotný Ježiš Kristus je hlavným uholným kameňom. Príslušnosť k všeobecnej Cirkvi nezbavuje človeka povinnosti patriť do miestneho zboru, pretože iba v ňom môžu veriaci plniť svoje povinnosti voči bratom a sestrám v Kristovi.",
+          "Veríme, že miestny zbor je skupinou kresťanov, ktorí sa pravidelne stretávajú v mene Krista, aby verejne vyznávali svoju vieru a vzájomne sa povzbudzovali vo vernosti Ježišovi Kristovi a Jeho Kráľovstvu skrze zvestovanie evanjelia, sviatosti a uplatňovanie cirkevnej disciplíny."
+        ]
+      },
+      {
+        "title": "9. Návrat Pána a posledné veci",
+        "paragraphs": [
+          "Veríme, že Ježiš Kristus znovu príde v moci a sláve, vzkriesi mŕtvych, vykoná súd nad celým ľudstvom, ustanoví svoje večné kráľovstvo a daruje večný život vykúpeným a večný trest tým, ktorí Ho odmietli."
+        ]
+      }
+    ]
+  },
+  "ministry": {
+    "kicker": "Život cirkvi",
+    "title": "Služby",
+    "ariaLabel": "Oblasti služby",
+    "smallGroups": "Malé skupiny",
+    "services": "Nedeľné bohoslužby",
+    "youth": "Stretnutia mládeže",
+    "music": "Hudobná služba"
+  },
+  "pastor": {
+    "photoAlt": "Pastor Oleksandr Novikov",
+    "name": "Oleksandr Novikov",
+    "role": "pastor cirkvi",
+    "description": "Oleksandr Novikov slúži ako pastor cirkvi Emmanuel v Bratislave. Jeho túžbou je pomáhať ľuďom spoznávať Boha, nachádzať podporu v spoločenstve a rásť vo viere."
+  },
+  "news": {
+    "title": "Novinky cirkvi",
+    "loading": "Načítavajú sa novinky...",
+    "next": "Ďalšia novinka",
+    "previous": "Predchádzajúca novinka",
+    "fullPost": "Celý príspevok",
+    "viewInstagram": "Zobraziť na Instagrame",
+    "error": "Novinky sa nepodarilo načítať.",
+    "retry": "Skúsiť znova",
+    "empty": "Zatiaľ nie sú žiadne novinky.",
+    "defaultType": "Novinky",
+    "types": {
+      "service": "Bohoslužba",
+      "event": "Podujatie",
+      "announcement": "Oznam",
+      "prayer": "Modlitba",
+      "community": "Spoločenstvo"
+    },
+    "items": {
+      "1": {
+        "title": "Nedeľná bohoslužba 22. decembra",
+        "description": "Pozývame všetkých na nedeľnú bohoslužbu. Téma kázne: „Pripravujeme sa na Kristovo narodenie“"
+      },
+      "2": {
+        "title": "Vianočný program pre deti",
+        "description": "Detský vianočný program s piesňami, hrami a darčekmi od svätého Mikuláša"
+      },
+      "3": {
+        "title": "Modlitebný večer",
+        "description": "Týždenný modlitebný večer vo štvrtok o 19:00. Príďte sa modliť spolu s nami"
+      },
+      "4": {
+        "title": "Vianočné koledy",
+        "description": "Učíme sa tradičné ukrajinské koledy na Vianoce. Pridajte sa k nášmu zboru"
+      }
+    }
+  },
+  "donation": {
+    "kicker": "Podporte službu",
+    "title": "Dary",
+    "text": "Ak chcete podporiť našu cirkev, môžete poslať dobrovoľný dar na bankový účet:",
+    "recipient": "Príjemca",
+    "recipientValue": "Cirkev Emmanuel",
+    "purpose": "Účel platby",
+    "purposeValue": "Dobrovoľný dar",
+    "qrAlt": "QR kód na dar pre cirkev Emmanuel",
+    "qrLabel": "Naskenovať pre platbu",
+    "quote": "„Každý nech dá, ako si zaumienil v srdci, nie z nechuti ani z donútenia, lebo radostného darcu miluje Boh.“",
+    "citation": "2. Korinťanom 9:7"
+  },
+  "contacts": {
+    "kicker": "Navštívte nás",
+    "title": "Kontakt",
+    "schedule": "Každú nedeľu o 10:00",
+    "social": "Sme na sociálnych sieťach",
+    "mapAlt": "Mapa polohy cirkvi na Bazovej 8 v Bratislave",
+    "location": "Naša adresa",
+    "route": "Naplánovať trasu"
+  },
+  "footer": {
+    "church": "CIRKEV EMMANUEL | BRATISLAVA",
+    "socialFirst": "NAŠE",
+    "socialSecond": "SOCIÁLNE SIETE:",
+    "metaAria": "Informácie o stránke",
+    "design": "Dizajn: Alina Synytska",
+    "updated": "Aktualizované: 2026"
+  }
+}
