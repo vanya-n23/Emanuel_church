@@ -39,7 +39,7 @@
   bottom: 0;
   width: min(39vw, 450px);
   height: calc(100% - 64px);
-  background: url("../images/aboutUs-bg.jpg") center / cover no-repeat;
+  background: url("../images/aboutus-new.jpg") center top / cover no-repeat;
   border-radius: 240px 240px 0 0;
 }
 

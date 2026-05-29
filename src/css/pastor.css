@@ -35,9 +35,10 @@
 .article-pastor-dscr-1 {
   margin-bottom: 10px;
   color: var(--color-burgundy);
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 .article-pastor-dscr-2 {

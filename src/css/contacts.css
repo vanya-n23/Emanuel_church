@@ -31,6 +31,10 @@
   color: #000000;
 }
 
+.contacts-title {
+  margin-bottom: 24px;
+}
+
 .ministry-slider {
   width: min(100% - 64px, var(--content-width));
   margin: 0 auto;
@@ -126,7 +130,9 @@
 }
 
 .contacts-item {
-  font-size: clamp(20px, 2.5vw, 25px);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .contacts-item a:hover,
@@ -134,60 +140,23 @@
   color: var(--color-burgundy);
 }
 
-.article-contact-links {
-  margin-bottom: 16px;
-  color: var(--color-burgundy);
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.social-icons {
-  display: flex;
-  gap: 12px;
-}
-
-.icon-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  color: var(--color-cream);
-  background-color: var(--color-burgundy);
-  border-radius: 50%;
-  transition: background-color 200ms ease;
-}
-
-.icon-wrapper:hover,
-.icon-wrapper:focus {
-  background-color: var(--color-ink);
-}
-
-.icon {
-  width: 22px;
-  height: 22px;
-  fill: currentColor;
-}
-
 .map-block {
-  display: grid;
-  grid-template-rows: 1fr auto;
   overflow: hidden;
   background-color: var(--color-white);
   border-radius: var(--radius);
 }
 
-.map-image {
+.map-frame {
   width: 100%;
-  height: 252px;
-  object-fit: cover;
+  height: 100%;
+  min-height: 252px;
+  border: 0;
+  filter: grayscale(1);
 }
 
 .location-text {
   display: grid;
   gap: 7px;
-  padding: 20px 24px 23px;
   color: var(--color-ink);
 }
 
@@ -199,14 +168,8 @@
 
 .location-text span {
   font-size: 18px;
-}
-
-.map-action {
-  margin-top: 8px;
-  color: var(--color-burgundy);
-  font-size: 14px !important;
-  font-weight: 700;
-  text-transform: uppercase;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 @media (max-width: 767px) {
@@ -227,5 +190,9 @@
 
   .contacts-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .map-frame {
+    height: 252px;
   }
 }

@@ -79,14 +79,14 @@
   grid-column: 1 / -1;
   width: min(100%, 860px);
   margin: 8px auto 0;
-  color: var(--color-burgundy);
+  color: var(--color-ink);
   font-family: "Gilroy", sans-serif;
 }
 
 .donation__quote p {
   margin-bottom: 16px;
-  font-size: clamp(21px, 2.2vw, 28px);
-  line-height: 1.42;
+  font-size: 18px;
+  line-height: 1.6;
   text-align: center;
 }
 
@@ -97,7 +97,7 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -125,7 +125,4 @@
     order: 2;
   }
 
-  .donation__quote p {
-    text-align: left;
-  }
 }
