@@ -20,9 +20,15 @@
 }
 
 .footer-logo {
-  font-family: "Codec Pro", sans-serif;
-  font-size: clamp(28px, 4vw, 40px);
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.footer-logo__image {
+  display: block;
+  width: 150px;
+  height: auto;
 }
 
 .footer-text,
@@ -91,6 +97,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+
+  .footer-logo__image {
+    width: 138px;
   }
 
   .footer-meta {
