@@ -20,7 +20,7 @@
   color: var(--color-burgundy);
   font-size: clamp(28px, 4vw, 46px);
   line-height: 1.12;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
