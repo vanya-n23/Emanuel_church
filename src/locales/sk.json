@@ -1,13 +1,13 @@
 {
   "meta": {
-    "description": "Cirkev Emmanuel v Bratislave: bohoslužby, služby, novinky, dary a kontakty."
+    "description": "Zbor Emmanuel v Bratislave: bohoslužby, služby, novinky, dary a kontakty."
   },
   "accessibility": {
     "skip": "Preskočiť na hlavný obsah"
   },
   "navigation": {
     "ariaLabel": "Hlavná navigácia",
-    "about": "O cirkvi",
+    "about": "O zbore",
     "ministry": "Služby",
     "donation": "Dary",
     "contacts": "Kontakt",
@@ -19,18 +19,18 @@
     "selectLabel": "{code} - vybrať jazyk"
   },
   "hero": {
-    "title": "MODERNÁ CIRKEV V BRATISLAVE",
+    "title": "MODERNÝ ZBOR V BRATISLAVE",
     "schedule": "KAŽDÚ NEDEĽU O | 10:00",
     "cta": "Zistiť viac"
   },
   "about": {
     "title": "O nás",
-    "paragraph1": "Cirkev Emmanuel v Bratislave je moderné kresťanské spoločenstvo, kde sa ľudia stretávajú okolo viery v Ježiša Krista, modlitby a Božieho slova.",
+    "paragraph1": "Zbor Emmanuel v Bratislave je moderné kresťanské spoločenstvo, kde sa ľudia stretávajú okolo viery v Ježiša Krista, modlitby a Božieho slova.",
     "paragraph2": "Stretávame sa každú nedeľu o 10:00 na bohoslužbe, uctievaní a živom spoločenstve.",
     "paragraph3": "Je pre nás dôležité byť otvoreným spoločenstvom, kde rodiny, mladí ľudia a každý, kto hľadá duchovnú podporu, môžu nájsť domov."
   },
   "vision": {
-    "title": "Vízia cirkvi",
+    "title": "Vízia zboru",
     "item1Title": "1. Uctievanie",
     "item1Text": "Stretávame sa, aby sme oslavovali Boha, modlili sa a počúvali Jeho Slovo.",
     "item2Title": "2. Spoločenstvo",
@@ -43,7 +43,7 @@
   "creed": {
     "kicker": "Čomu veríme",
     "title": "Vyznanie viery",
-    "intro": "Naše vyznanie viery predstavuje kresťanské presvedčenia, na ktorých stojí život a služba cirkvi Emmanuel.",
+    "intro": "Naše vyznanie viery predstavuje kresťanské presvedčenia, na ktorých stojí život a služba zboru Emmanuel.",
     "accordionLabel": "Články vyznania viery",
     "download": "Stiahnuť PDF",
     "fileInfo": "PDF, 58 KB",
@@ -60,7 +60,7 @@
         "paragraphs": [
           "Veríme v jedného všemohúceho a večného Boha, ktorý existuje ako Otec, Syn a Duch Svätý: tri Božské osoby v jednej Božskej podstate a večnom živote. Boh je svätý, vševediaci, všadeprítomný, Stvoriteľ a Udržiavateľ všetkého, hodný všetkej úcty a slávy.",
           "Veríme, že Boh Otec je nestvorený, večný a zdrojom všetkého bytia. Je svätý, dobrý, spravodlivý a Otec nášho Pána Ježiša Krista.",
-          "Veríme, že Boh Duch Svätý je nestvorený, vychádza od Otca skrze Syna, je rovný Otcovi a Synovi, oslavuje Krista, usvedčuje z hriechu, znovuzrodzuje veriacich a vedie Cirkev v pravde a posvätení."
+          "Veríme, že Boh Duch Svätý je nestvorený, vychádza od Otca skrze Syna, je rovný Otcovi a Synovi, oslavuje Krista, usvedčuje z hriechu, znovuzrodzuje veriacich a vedie zbor v pravde a posvätení."
         ]
       },
       {
@@ -100,7 +100,7 @@
         "paragraphs": [
           "Cirkev je novým Božím ľudom, neviditeľným chrámom Pána a živým duchovným organizmom, ktorého Hlavou je Ježiš Kristus.",
           "Veríme, že všeobecná Cirkev je Telom Kristovým a pozostáva zo všetkých znovuzrodených veriacich zo všetkých národov a generácií. Všeobecná Kristova Cirkev nie je pokračovaním starozákonného Izraela, ale bola založená Ježišom Kristom v deň Letníc na základe apoštolov a prorokov, pričom samotný Ježiš Kristus je hlavným uholným kameňom. Príslušnosť k všeobecnej Cirkvi nezbavuje človeka povinnosti patriť do miestneho zboru, pretože iba v ňom môžu veriaci plniť svoje povinnosti voči bratom a sestrám v Kristovi.",
-          "Veríme, že miestny zbor je skupinou kresťanov, ktorí sa pravidelne stretávajú v mene Krista, aby verejne vyznávali svoju vieru a vzájomne sa povzbudzovali vo vernosti Ježišovi Kristovi a Jeho Kráľovstvu skrze zvestovanie evanjelia, sviatosti a uplatňovanie cirkevnej disciplíny."
+          "Veríme, že miestny zbor je skupinou kresťanov, ktorí sa pravidelne stretávajú v mene Krista, aby verejne vyznávali svoju vieru a vzájomne sa povzbudzovali vo vernosti Ježišovi Kristovi a Jeho Kráľovstvu skrze zvestovanie evanjelia, sviatosti a uplatňovanie zborovej disciplíny."
         ]
       },
       {
@@ -112,7 +112,7 @@
     ]
   },
   "ministry": {
-    "kicker": "Život cirkvi",
+    "kicker": "Život zboru",
     "title": "Služby",
     "ariaLabel": "Oblasti služby",
     "smallGroups": "Malé skupiny",
@@ -123,11 +123,11 @@
   "pastor": {
     "photoAlt": "Pastor Oleksandr Novikov",
     "name": "Oleksandr Novikov",
-    "role": "pastor cirkvi",
-    "description": "Oleksandr Novikov slúži ako pastor cirkvi Emmanuel v Bratislave. Jeho túžbou je pomáhať ľuďom spoznávať Boha, nachádzať podporu v spoločenstve a rásť vo viere."
+    "role": "pastor zboru",
+    "description": "Oleksandr Novikov slúži ako pastor zboru Emmanuel v Bratislave. Jeho túžbou je pomáhať ľuďom spoznávať Boha, nachádzať podporu v spoločenstve a rásť vo viere."
   },
   "news": {
-    "title": "Novinky cirkvi",
+    "title": "Novinky zboru",
     "loading": "Načítavajú sa novinky...",
     "next": "Ďalšia novinka",
     "previous": "Predchádzajúca novinka",
@@ -166,12 +166,12 @@
   "donation": {
     "kicker": "Podporte službu",
     "title": "Dary",
-    "text": "Ak chcete podporiť našu cirkev, môžete poslať dobrovoľný dar na bankový účet:",
+    "text": "Ak chcete podporiť náš zbor, môžete poslať dobrovoľný dar na bankový účet:",
     "recipient": "Príjemca",
-    "recipientValue": "Cirkev Emmanuel",
+    "recipientValue": "Zbor Emmanuel",
     "purpose": "Účel platby",
     "purposeValue": "Dobrovoľný dar",
-    "qrAlt": "QR kód na dar pre cirkev Emmanuel",
+    "qrAlt": "QR kód na dar pre zbor Emmanuel",
     "qrLabel": "Naskenovať pre platbu",
     "quote": "„Každý nech dá, ako si zaumienil v srdci, nie z nechuti ani z donútenia, lebo radostného darcu miluje Boh.“",
     "citation": "2. Korinťanom 9:7"
@@ -181,12 +181,12 @@
     "title": "Kontakt",
     "schedule": "Každú nedeľu o 10:00",
     "social": "Sme na sociálnych sieťach",
-    "mapAlt": "Mapa polohy cirkvi na Bazovej 8 v Bratislave",
+    "mapAlt": "Mapa polohy zboru na Bazovej 8 v Bratislave",
     "location": "Naša adresa",
     "route": "Naplánovať trasu"
   },
   "footer": {
-    "church": "CIRKEV EMMANUEL | BRATISLAVA",
+    "church": "ZBOR EMMANUEL | BRATISLAVA",
     "socialFirst": "NAŠE",
     "socialSecond": "SOCIÁLNE SIETE:",
     "metaAria": "Informácie o stránke",
