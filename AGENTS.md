@@ -22,6 +22,8 @@ Use ES modules for JavaScript and keep feature behavior in focused files under `
 ## Content & Asset Guidelines
 
 Keep Ukrainian-facing copy consistent with the current site voice. Store editable news data in `src/public/data/news.json`; keep related media under `src/public/images/news/`. Put reusable icons in `src/assets/icons/sprite.svg` and fonts under `src/assets/fonts/`. Avoid hardcoded external asset URLs when a local project asset is available.
+The site uses three language resource files: `en.json`, `sk.json`, and `ua.json` in `src/locales/`. When updating text in one language, translate and update the other two.
+
 
 ## Testing Guidelines
 
