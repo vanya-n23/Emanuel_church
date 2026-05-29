@@ -13,6 +13,10 @@
   background-color: var(--color-blue);
 }
 
+.ministry-block .section-kicker {
+  color: #000000;
+}
+
 .ministry-title,
 .contacts-title {
   margin-bottom: 42px;
@@ -21,6 +25,10 @@
   line-height: 1.15;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.ministry-title {
+  color: #000000;
 }
 
 .ministry-slider {
