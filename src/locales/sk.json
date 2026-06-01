@@ -146,20 +146,20 @@
     },
     "items": {
       "1": {
-        "title": "Nedeľná bohoslužba 22. decembra",
-        "description": "Pozývame všetkých na nedeľnú bohoslužbu. Téma kázne: „Pripravujeme sa na Kristovo narodenie“"
+        "title": "Stretnutie pre ženy",
+        "description": "Výtvarný workshop a večer úprimných rozhovorov o dôležitých veciach"
       },
       "2": {
-        "title": "Vianočný program pre deti",
-        "description": "Detský vianočný program s piesňami, hrami a darčekmi od svätého Mikuláša"
+        "title": "Veľkonočná slávnosť",
+        "description": "Vrúcne chvíle veľkonočnej bohoslužby v spoločenstve a radosti z Kristovho vzkriesenia"
       },
       "3": {
         "title": "Modlitebný večer",
-        "description": "Týždenný modlitebný večer vo štvrtok o 19:00. Príďte sa modliť spolu s nami"
+        "description": "Modlitebný večer vo štvrtok o 19:00. Príď sa modliť spolu s nami!"
       },
       "4": {
-        "title": "Vianočné koledy",
-        "description": "Učíme sa tradičné ukrajinské koledy na Vianoce. Pridajte sa k nášmu zboru"
+        "title": "Piknik",
+        "description": "Spoločný výlet do prírody na oddych, rozhovory a priateľskú jednotu"
       }
     }
   },

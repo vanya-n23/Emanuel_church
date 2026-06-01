@@ -146,20 +146,20 @@
     },
     "items": {
       "1": {
-        "title": "Sunday service on December 22",
-        "description": "Everyone is welcome at our Sunday service. Sermon topic: 'Preparing for the Birth of Christ'"
+        "title": "Women's Meeting",
+        "description": "An art workshop and an evening of sincere conversations about what matters"
       },
       "2": {
-        "title": "Christmas program for children",
-        "description": "A children's Christmas program with songs, games and gifts from Saint Nicholas"
+        "title": "Easter Celebration",
+        "description": "Warm moments from the Easter service in fellowship and the joy of Christ's Resurrection"
       },
       "3": {
         "title": "Prayer evening",
-        "description": "Weekly prayer evening on Thursday at 19:00. Come and pray with us"
+        "description": "Prayer evening on Thursday at 19:00. Come pray with us!"
       },
       "4": {
-        "title": "Christmas carols",
-        "description": "We are learning traditional Ukrainian Christmas carols. Join our choir"
+        "title": "Picnic",
+        "description": "A shared trip into nature for rest, fellowship and friendly unity"
       }
     }
   },
