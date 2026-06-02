@@ -59,6 +59,10 @@ const NEWS_IMAGES = {
   ).href,
   "small-group": new URL("../assets/contacts/small-group.jpg", import.meta.url)
     .href,
+  "prayer-evening": new URL(
+    "../assets/contacts/prayer-evening.jpg",
+    import.meta.url
+  ).href,
   "youth-events": new URL(
     "../assets/contacts/youth-events.jpg",
     import.meta.url
