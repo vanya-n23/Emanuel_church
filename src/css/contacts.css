@@ -58,12 +58,12 @@
 .ministry-pagination .swiper-pagination-bullet {
   width: 9px;
   height: 9px;
-  background-color: rgba(125, 2, 32, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
 
 .ministry-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-burgundy);
+  background-color: #000000;
 }
 
 .card {

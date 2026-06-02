@@ -54,6 +54,15 @@
   font-weight: 700;
 }
 
+.donation__notice {
+  max-width: 520px;
+  margin-top: 16px;
+  color: var(--color-burgundy);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .donation__aside {
   display: grid;
   justify-items: center;
